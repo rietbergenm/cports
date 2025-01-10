@@ -9,7 +9,7 @@ url = "https://github.com/anrieff/libcpuid"
 build_style = "cmake"
 configure_args = [
     "-DLIBCPUID_ENABLE_TESTS=ON",
-    "-DLIBCPUID_BUILD_DRIVERS=OFF" # only available on arm?
+    "-DLIBCPUID_DRIVER_ARM_LINUX_DKMS=ON" # ship the arm dkms module
 ]
 hostmakedepends = [
     "cmake",
@@ -28,6 +28,11 @@ archs = [ "x86_64" ]
 def post_install(self):
     self.install_license("COPYING")
 
+    # the kernel module is called "cpuid", not "libcpuid"
+    src_path = f"usr/src/cpuid-{pkgver}"
+    self.install_file(self.files_path / "ckms.ini", src_path)
+    self.uninstall(src_path + "/dkms.conf")
+
 @subpackage("libcpuid-devel")
 def _(self):
     return self.default_devel()
@@ -35,3 +40,17 @@ def _(self):
 @subpackage("libcpuid-progs")
 def _(self):
     return self.default_progs()
+
+# x86_64 does not need kernel modules (they are in-tree),
+# but there is a dkms module for aarch32/64
+@subpackage("libcpuid-ckms", self.profile().arch == "aarch64")
+def _(self):
+    self.subdesc = "kernel sources"
+    self.install_if = [ self.parent, "ckms" ]
+    self.depends = [
+        self.parent,
+        "ckms",
+        "gmake"
+    ]
+
+    return [ "usr/src" ]
