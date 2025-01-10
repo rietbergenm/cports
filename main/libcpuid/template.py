@@ -23,7 +23,7 @@ checkdepends = [
 make_check_target = "test-old test-fast" # do all test there are
 source = f"{url}/archive/refs/tags/v{pkgver}.tar.gz"
 sha256 = "c54879ea33b68a2e752c20fb0e3cd04439a9177eab23371f709f15a45df43644"
-archs = [ "x86_64", "aarch64" ]
+archs = [ "x86_64" ]
 
 def post_install(self):
     self.install_license("COPYING")
