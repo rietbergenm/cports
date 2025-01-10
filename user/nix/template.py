@@ -11,6 +11,7 @@ build_style = "meson"
 configure_args = [
     "--libexecdir=/usr/lib", #XXX: no /usr/libexec
     "-Dnix:profile-dir=/etc/profile.d", # defaults to etc/profile.d which becomes /usr/etc/profile.d with the prefix
+    "-Dlibcmd:readline-flavor=readline",
     # next one fixes "ERROR: clang does not know how to do prelinking."
     "-Ddefault_library=shared",
     "-Ddoc-gen=false",
@@ -47,10 +48,10 @@ makedepends = [
     "sqlite-devel",
     "libgit2-devel", # XXX: should be newer that 1.9.0
     "gc-devel",
-    "toml11",
-    "editline-devel",
+    #"toml11",
+    "libedit-readline-devel",
     "lowdown-devel",
-    "libcpuid-devel" # TODO: check if only for x86_64 or for all
+    #"libcpuid-devel" # TODO: check if only for x86_64 or for all
 ]
 checkdepends = [
     # unit-tests target (wip)
