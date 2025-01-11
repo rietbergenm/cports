@@ -24,7 +24,7 @@ configure_args = [
     # We don't do test as it requires network, so don't build them.
     "-Dunit-tests=false",
 
-    # added a patch to use libedit instead of editline or readline
+    # Use libedit instead of editline or readline.
     "-Dlibcmd:readline-flavor=readline",
 ]
 hostmakedepends = [
@@ -71,7 +71,7 @@ makedepends = [
     # only one architecture.
     #"libcpuid-devel", # not upstreamed
 ]
-# we don't actually use these atm as checks are disabled
+# We don't actually use these at the moment, because checks are disabled.
 checkdepends = [
     "rapidcheck",       # not upstreamed
     "gtest-devel",
@@ -82,7 +82,7 @@ license = "LGPL-2.1-or-later"
 url = "https://github.com/NixOS/nix"
 source = f"{url}/archive/refs/tags/{pkgver}.tar.gz"
 sha256 = "8d7af0d25371da32783f0b46bce8ff4f0d1dd996db6dee272faf306fcb8e2073"
-# without `int` enabled, all nix tools constantly fail with "Illegal instruction".
+# Without `int` enabled, all nix tools constantly fail with "Illegal instruction".
 hardening = [ "!int" ]
 # Checks require network to download from nixpkgs, but network is not available
 # in check phase.
