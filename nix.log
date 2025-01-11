@@ -1,0 +1,1167 @@
+(  1/110) Installing readline (8.2.013-r0)
+(  2/110) Installing bash (5.2.37-r1)
+(  3/110) Installing gm4 (1.4.19-r0)
+(  4/110) Installing libunistring (1.3-r0)
+(  5/110) Installing icu-libs (76.1-r0)
+(  6/110) Installing libxml2 (2.13.5-r0)
+(  7/110) Installing gettext-libs (0.23.1-r0)
+(  8/110) Installing bison (3.8.2-r1)
+(  9/110) Installing boost (1.87.0-r0)
+( 10/110) Installing boost-atomic-libs (1.87.0-r0)
+( 11/110) Installing boost-charconv-libs (1.87.0-r0)
+( 12/110) Installing boost-chrono-libs (1.87.0-r0)
+( 13/110) Installing boost-container-libs (1.87.0-r0)
+( 14/110) Installing boost-context-libs (1.87.0-r0)
+( 15/110) Installing boost-contract-libs (1.87.0-r0)
+( 16/110) Installing boost-coroutine-libs (1.87.0-r0)
+( 17/110) Installing boost-date_time-libs (1.87.0-r0)
+( 18/110) Installing boost-fiber-libs (1.87.0-r0)
+( 19/110) Installing boost-filesystem-libs (1.87.0-r0)
+( 20/110) Installing boost-graph-libs (1.87.0-r0)
+( 21/110) Installing boost-iostreams-libs (1.87.0-r0)
+( 22/110) Installing boost-json-libs (1.87.0-r0)
+( 23/110) Installing boost-thread-libs (1.87.0-r0)
+( 24/110) Installing boost-locale-libs (1.87.0-r0)
+( 25/110) Installing boost-log-libs (1.87.0-r0)
+( 26/110) Installing boost-log_setup-libs (1.87.0-r0)
+( 27/110) Installing boost-math-libs (1.87.0-r0)
+( 28/110) Installing boost-nowide-libs (1.87.0-r0)
+( 29/110) Installing boost-prg_exec_monitor-libs (1.87.0-r0)
+( 30/110) Installing boost-process-libs (1.87.0-r0)
+( 31/110) Installing boost-program_options-libs (1.87.0-r0)
+( 32/110) Installing base-python3.12 (3.12.8-r1)
+( 33/110) Installing libexpat (2.6.4-r0)
+( 34/110) Installing sqlite (3.47.2-r0)
+( 35/110) Installing python (3.12.8-r1)
+( 36/110) Installing python-pycache (3.12.8-r1)
+( 37/110) Installing boost-python-libs (1.87.0-r0)
+( 38/110) Installing boost-random-libs (1.87.0-r0)
+( 39/110) Installing boost-regex-libs (1.87.0-r0)
+( 40/110) Installing boost-serialization-libs (1.87.0-r0)
+( 41/110) Installing boost-stacktrace_addr2line-libs (1.87.0-r0)
+( 42/110) Installing boost-stacktrace_basic-libs (1.87.0-r0)
+( 43/110) Installing boost-stacktrace_from_exception-libs (1.87.0-r0)
+( 44/110) Installing boost-stacktrace_noop-libs (1.87.0-r0)
+( 45/110) Installing boost-system-libs (1.87.0-r0)
+( 46/110) Installing boost-timer-libs (1.87.0-r0)
+( 47/110) Installing boost-type_erasure-libs (1.87.0-r0)
+( 48/110) Installing boost-unit_test_framework-libs (1.87.0-r0)
+( 49/110) Installing boost-url-libs (1.87.0-r0)
+( 50/110) Installing boost-wave-libs (1.87.0-r0)
+( 51/110) Installing boost-wserialization-libs (1.87.0-r0)
+( 52/110) Installing bzip2-devel (1.0.8-r3)
+( 53/110) Installing icu-devel (76.1-r0)
+( 54/110) Installing linux-headers (6.12.5-r0)
+( 55/110) Installing python-devel (3.12.8-r1)
+( 56/110) Installing xz-devel (5.6.3-r0)
+( 57/110) Installing zlib-ng-compat-devel (2.2.3-r0)
+( 58/110) Installing zstd-devel (1.5.6-r2)
+( 59/110) Installing boost-devel (1.87.0-r0)
+( 60/110) Installing brotli (1.1.0-r0)
+( 61/110) Installing brotli-devel (1.1.0-r0)
+( 62/110) Installing libarchive (3.7.7-r0)
+( 63/110) Installing c-ares (1.34.4-r0)
+( 64/110) Installing libidn2 (2.3.7-r1)
+( 65/110) Installing nghttp2 (1.64.0-r0)
+( 66/110) Installing nghttp3 (1.7.0-r0)
+( 67/110) Installing libpsl (0.21.5-r1)
+( 68/110) Installing libssh2 (1.11.1-r0)
+( 69/110) Installing curl-libs (8.11.1-r0)
+( 70/110) Installing rhash (1.4.5-r0)
+( 71/110) Installing libuv (1.49.2-r0)
+( 72/110) Installing cmake (3.31.3-r0)
+( 73/110) Installing c-ares-devel (1.34.4-r0)
+( 74/110) Installing libidn2-devel (2.3.7-r1)
+( 75/110) Installing libpsl-devel (0.21.5-r1)
+( 76/110) Installing openssl-devel (3.4.0-r2)
+( 77/110) Installing libssh2-devel (1.11.1-r0)
+( 78/110) Installing nghttp2-devel (1.64.0-r0)
+( 79/110) Installing nghttp3-devel (1.7.0-r0)
+( 80/110) Installing curl-devel (8.11.1-r0)
+( 81/110) Installing byacc (20241231-r0)
+( 82/110) Installing libfl-devel-static (2.6.4-r1)
+( 83/110) Installing flex (2.6.4-r1)
+( 84/110) Installing gc (8.2.8-r1)
+( 85/110) Installing gc-devel (8.2.8-r1)
+( 86/110) Installing attr (2.5.2-r0)
+( 87/110) Installing attr-devel (2.5.2-r0)
+( 88/110) Installing acl-devel (2.3.2-r1)
+( 89/110) Installing lz4-devel (1.10.0-r1)
+( 90/110) Installing musl-bsd-headers (0.1-r1)
+( 91/110) Installing libarchive-devel (3.7.7-r0)
+( 92/110) Installing libedit-devel (20240711-r1)
+( 93/110) Installing libedit-readline-devel (20240711-r1)
+( 94/110) Installing http-parser (2.9.4-r0)
+( 95/110) Installing libpcre2 (10.44-r1)
+( 96/110) Installing libgit2 (1.9.0-r0)
+( 97/110) Installing pcre2-devel (10.44-r1)
+( 98/110) Installing libgit2-devel (1.9.0-r0)
+( 99/110) Installing libseccomp (2.5.5-r1)
+(100/110) Installing libseccomp-devel (2.5.5-r1)
+(101/110) Installing libsodium (1.0.20-r0)
+(102/110) Installing libsodium-devel (1.0.20-r0)
+(103/110) Installing lowdown (1.4.0-r0)
+(104/110) Installing lowdown-devel (1.4.0-r0)
+(105/110) Installing ninja (1.12.1-r0)
+(106/110) Installing meson (1.6.0-r1)
+(107/110) Installing meson-pycache (1.6.0-r1)
+(108/110) Installing nlohmann-json (3.11.3-r1)
+(109/110) Installing sqlite-devel (3.47.2-r0)
+(110/110) Installing toml11 (4.2.0-r0)
+OK: 907 MiB in 172 packages
+The Meson build system
+Version: 1.6.0
+Source dir: /builddir/nix-2.25.3
+Build dir: /builddir/nix-2.25.3/build
+Build type: native build
+WARNING: Project does not target a minimum version but uses feature introduced in '1.1': meson.options file. Use meson_options.txt instead
+Project name: nix-dev-shell
+Project version: 2.25.3
+C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+C++ linker for the host machine: clang++ ld.lld 19.1.6
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+
+Executing subproject libutil 
+
+libutil| Project name: nix-util
+libutil| Project version: 2.25.3
+libutil| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libutil| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libutil| Checking for function "close_range" : NO
+libutil| Checking for function "lutimes" : YES
+libutil| Checking for function "pipe2" : YES
+libutil| Checking for function "posix_fallocate" : YES
+libutil| Checking for function "strsignal" : YES
+libutil| Checking for function "sysconf" : YES
+libutil| Checking for function "utimensat" : YES
+libutil| Header "fcntl.h" has symbol "AT_SYMLINK_NOFOLLOW" : YES
+libutil| Run-time dependency threads found: YES
+libutil| Found pkg-config: YES (/usr/bin/pkg-config) 2.3.0
+libutil| Run-time dependency Boost (found: context, coroutine) found: YES 1.87.0 (/usr)
+libutil| Run-time dependency libcrypto found: YES 3.4.0
+libutil| Run-time dependency libarchive found: YES 3.7.7
+libutil| Run-time dependency libsodium found: YES 1.0.20
+libutil| Run-time dependency libbrotlicommon found: YES 1.1.0
+libutil| Run-time dependency libbrotlidec found: YES 1.1.0
+libutil| Run-time dependency libbrotlienc found: YES 1.1.0
+libutil| Found CMake: /usr/bin/cmake (3.31.3)
+libutil| Run-time dependency libcpuid found: NO (tried pkgconfig and cmake)
+libutil| Run-time dependency cpuid found: NO (tried pkgconfig and cmake)
+libutil| Run-time dependency nlohmann_json found: YES 3.11.3
+libutil| Configuring config-util.hh using configuration
+libutil| Build targets in project: 1
+libutil| Subproject libutil finished.
+
+
+Executing subproject libstore 
+
+libstore| Project name: nix-store
+libstore| Project version: 2.25.3
+libstore| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libstore| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libstore| Dependency nix-util found: YES 2.25.3 (overridden)
+libstore| Checking for function "lchown" : YES
+libstore| Checking for function "statvfs" : YES
+libstore| Has header "sys/xattr.h" : YES
+libstore| Checking for function "llistxattr" : YES
+libstore| Checking for function "lremovexattr" : YES
+libstore| Dependency threads found: YES unknown (cached)
+libstore| Run-time dependency Boost (found: container) found: YES 1.87.0 (/usr)
+libstore| Run-time dependency libcurl found: YES 8.11.1
+libstore| Run-time dependency libseccomp found: YES 2.5.5
+libstore| Dependency nlohmann_json found: YES 3.11.3 (cached)
+libstore| Run-time dependency sqlite3 found: YES 3.47.2
+libstore| Run-time dependency aws-cpp-sdk-s3 found: NO (tried pkgconfig and cmake)
+libstore| Program bash found: YES (/usr/bin/bash)
+libstore| Program busybox found: NO
+libstore| Configuring config-store.hh using configuration
+libstore| Program lsof found: NO
+libstore| Build targets in project: 2
+libstore| Subproject libstore finished.
+
+
+Executing subproject libfetchers 
+
+libfetchers| Project name: nix-fetchers
+libfetchers| Project version: 2.25.3
+libfetchers| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libfetchers| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libfetchers| Dependency nix-util found: YES 2.25.3 (overridden)
+libfetchers| Dependency nix-store found: YES 2.25.3 (overridden)
+libfetchers| Dependency threads found: YES unknown (cached)
+libfetchers| Dependency nlohmann_json found: YES 3.11.3 (cached)
+libfetchers| Run-time dependency libgit2 found: YES 1.9.0
+libfetchers| Build targets in project: 3
+libfetchers| Subproject libfetchers finished.
+
+
+Executing subproject libexpr 
+
+libexpr| Project name: nix-expr
+libexpr| Project version: 2.25.3
+libexpr| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libexpr| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libexpr| Dependency nix-util found: YES 2.25.3 (overridden)
+libexpr| Dependency nix-store found: YES 2.25.3 (overridden)
+libexpr| Dependency nix-fetchers found: YES 2.25.3 (overridden)
+libexpr| Dependency threads found: YES unknown (cached)
+libexpr| Run-time dependency Boost (found: container, context) found: YES 1.87.0 (/usr)
+libexpr| Dependency nlohmann_json found: YES 3.11.3 (cached)
+libexpr| Run-time dependency bdw-gc found: YES 8.2.8
+libexpr| Checking for function "pthread_attr_get_np" : NO
+libexpr| Checking for function "pthread_getattr_np" : YES
+libexpr| Run-time dependency toml11 found: YES 4.2.0
+libexpr| Configuring config-expr.hh using configuration
+libexpr| Program bash found: YES (/usr/bin/bash)
+libexpr| Build targets in project: 6
+libexpr| Subproject libexpr finished.
+
+
+Executing subproject libflake 
+
+libflake| Project name: nix-flake
+libflake| Project version: 2.25.3
+libflake| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libflake| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libflake| Dependency nix-util found: YES 2.25.3 (overridden)
+libflake| Dependency nix-store found: YES 2.25.3 (overridden)
+libflake| Dependency nix-fetchers found: YES 2.25.3 (overridden)
+libflake| Dependency nix-expr found: YES 2.25.3 (overridden)
+libflake| Dependency threads found: YES unknown (cached)
+libflake| Dependency nlohmann_json found: YES 3.11.3 (cached)
+libflake| Build targets in project: 7
+libflake| Subproject libflake finished.
+
+
+Executing subproject libmain 
+
+libmain| Project name: nix-main
+libmain| Project version: 2.25.3
+libmain| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libmain| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libmain| Dependency nix-util found: YES 2.25.3 (overridden)
+libmain| Dependency nix-store found: YES 2.25.3 (overridden)
+libmain| Dependency threads found: YES unknown (cached)
+libmain| Configuring config-main.hh using configuration
+libmain| Build targets in project: 8
+libmain| Subproject libmain finished.
+
+
+Executing subproject libcmd 
+
+libcmd| Project name: nix-cmd
+libcmd| Project version: 2.25.3
+libcmd| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libcmd| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libcmd| Dependency nix-util found: YES 2.25.3 (overridden)
+libcmd| Dependency nix-store found: YES 2.25.3 (overridden)
+libcmd| Dependency nix-fetchers found: YES 2.25.3 (overridden)
+libcmd| Dependency nix-expr found: YES 2.25.3 (overridden)
+libcmd| Dependency nix-flake found: YES 2.25.3 (overridden)
+libcmd| Dependency nix-main found: YES 2.25.3 (overridden)
+libcmd| Dependency threads found: YES unknown (cached)
+libcmd| Dependency nlohmann_json found: YES 3.11.3 (cached)
+libcmd| Run-time dependency lowdown found: YES 1.4.0
+libcmd| Run-time dependency readline found: YES 20240711
+libcmd| Configuring config-cmd.hh using configuration
+libcmd| Build targets in project: 9
+libcmd| Subproject libcmd finished.
+
+
+Executing subproject nix 
+
+nix| Project name: nix
+nix| Project version: 2.25.3
+nix| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+nix| C++ linker for the host machine: clang++ ld.lld 19.1.6
+nix| Dependency nix-store found: YES 2.25.3 (overridden)
+nix| Dependency nix-util found: YES 2.25.3 (overridden)
+nix| Dependency nix-expr found: YES 2.25.3 (overridden)
+nix| Dependency nix-flake found: YES 2.25.3 (overridden)
+nix| Dependency nix-fetchers found: YES 2.25.3 (overridden)
+nix| Dependency nix-main found: YES 2.25.3 (overridden)
+nix| Dependency nix-cmd found: YES 2.25.3 (overridden)
+nix| Dependency threads found: YES unknown (cached)
+nix| Configuring config-nix-cli.hh using configuration
+nix| Program bash found: YES (/usr/bin/bash)
+nix| src/nix/meson.build:225: WARNING: Project targets '>= 1.1' but uses feature introduced in '1.4.0': fs.name with build_tgt, custom_tgt, and custom_idx.
+nix| src/nix/meson.build:231: WARNING: Project targets '>= 1.1' but uses feature introduced in '1.4.0': fs.name with build_tgt, custom_tgt, and custom_idx.
+nix| src/nix/meson.build:244: WARNING: Project targets '>= 1.1' but uses feature introduced in '1.4.0': fs.name with build_tgt, custom_tgt, and custom_idx.
+nix| src/nix/meson.build:245: WARNING: Project targets '>= 1.1' but uses feature introduced in '1.4.0': fs.name with build_tgt, custom_tgt, and custom_idx.
+nix| src/nix/meson.build:251: WARNING: Project targets '>= 1.1' but uses feature introduced in '1.4.0': fs.name with build_tgt, custom_tgt, and custom_idx.
+nix| Configuring nix-profile.sh using configuration
+nix| Configuring nix.sh using configuration
+nix| Configuring nix.fish using configuration
+nix| Configuring nix-daemon.sh using configuration
+nix| Configuring nix-daemon.fish using configuration
+nix| Configuring nix-daemon.socket using configuration
+nix| Configuring nix-daemon.service using configuration
+nix| Configuring nix-daemon.conf using configuration
+nix| Build targets in project: 22
+nix| WARNING: Project specifies a minimum meson_version '>= 1.1' but uses features which were added in newer versions:
+nix| * 1.4.0: {'fs.name with build_tgt, custom_tgt, and custom_idx'}
+nix| Subproject nix finished.
+
+
+Executing subproject libutil-c 
+
+libutil-c| Project name: nix-util-c
+libutil-c| Project version: 2.25.3
+libutil-c| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libutil-c| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libutil-c| Dependency nix-util found: YES 2.25.3 (overridden)
+libutil-c| Dependency threads found: YES unknown (cached)
+libutil-c| Configuring config-util.h using configuration
+libutil-c| Build targets in project: 23
+libutil-c| Subproject libutil-c finished.
+
+
+Executing subproject libstore-c 
+
+libstore-c| Project name: nix-store-c
+libstore-c| Project version: 2.25.3
+libstore-c| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libstore-c| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libstore-c| Dependency nix-util found: YES 2.25.3 (overridden)
+libstore-c| Dependency nix-store found: YES 2.25.3 (overridden)
+libstore-c| Dependency nix-util-c found: YES 2.25.3 (overridden)
+libstore-c| Dependency threads found: YES unknown (cached)
+libstore-c| Configuring config-store.h using configuration
+libstore-c| Build targets in project: 24
+libstore-c| Subproject libstore-c finished.
+
+
+Executing subproject libexpr-c 
+
+libexpr-c| Project name: nix-expr-c
+libexpr-c| Project version: 2.25.3
+libexpr-c| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libexpr-c| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libexpr-c| Dependency nix-util found: YES 2.25.3 (overridden)
+libexpr-c| Dependency nix-store found: YES 2.25.3 (overridden)
+libexpr-c| Dependency nix-expr found: YES 2.25.3 (overridden)
+libexpr-c| Dependency nix-util-c found: YES 2.25.3 (overridden)
+libexpr-c| Dependency nix-store-c found: YES 2.25.3 (overridden)
+libexpr-c| Dependency threads found: YES unknown (cached)
+libexpr-c| Configuring config-expr.h using configuration
+libexpr-c| Build targets in project: 25
+libexpr-c| Subproject libexpr-c finished.
+
+
+Executing subproject libmain-c 
+
+libmain-c| Project name: nix-main-c
+libmain-c| Project version: 2.25.3
+libmain-c| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+libmain-c| C++ linker for the host machine: clang++ ld.lld 19.1.6
+libmain-c| Dependency nix-util found: YES 2.25.3 (overridden)
+libmain-c| Dependency nix-store found: YES 2.25.3 (overridden)
+libmain-c| Dependency nix-main found: YES 2.25.3 (overridden)
+libmain-c| Dependency nix-util-c found: YES 2.25.3 (overridden)
+libmain-c| Dependency nix-store-c found: YES 2.25.3 (overridden)
+libmain-c| Dependency threads found: YES unknown (cached)
+libmain-c| Configuring config-main.h using configuration
+libmain-c| Build targets in project: 26
+libmain-c| Subproject libmain-c finished.
+
+
+Executing subproject nix-functional-tests 
+
+nix-functional-tests| Project name: nix-functional-tests
+nix-functional-tests| Project version: 2.25.3
+nix-functional-tests| Program nix found: YES (overridden)
+nix-functional-tests| Program bash found: YES (/usr/bin/bash)
+nix-functional-tests| Program busybox found: NO
+nix-functional-tests| Program ls found: YES (/usr/bin/ls)
+nix-functional-tests| Program dot found: NO
+nix-functional-tests| Configuring subst-vars.sh using configuration
+nix-functional-tests| src/nix-functional-tests/common/meson.build:1: WARNING: The variable(s) 'variable' in the input file 'src/nix-functional-tests/common/subst-vars.sh.in' are not present in the given configuration data.
+nix-functional-tests| Configuring config.nix using configuration
+nix-functional-tests| Dependency nix-store found: YES 2.25.3 (overridden)
+nix-functional-tests| src/nix-functional-tests/meson.build:176: WARNING: add_languages is missing native:, assuming languages are wanted for both host and build.
+nix-functional-tests| C++ compiler for the host machine: clang++ (clang 19.1.6 "clang version 19.1.6")
+nix-functional-tests| C++ linker for the host machine: clang++ ld.lld 19.1.6
+nix-functional-tests| Dependency nix-store found: YES 2.25.3 (overridden)
+nix-functional-tests| Dependency nix-expr found: YES 2.25.3 (overridden)
+nix-functional-tests| src/nix-functional-tests/meson.build:194: WARNING: add_languages is missing native:, assuming languages are wanted for both host and build.
+nix-functional-tests| Dependency nix-expr found: YES 2.25.3 (overridden)
+nix-functional-tests| Configuring config.nix using configuration
+nix-functional-tests| Configuring config.nix using configuration
+nix-functional-tests| Build targets in project: 28
+nix-functional-tests| Subproject nix-functional-tests finished.
+
+Build targets in project: 28
+WARNING: Project specifies no minimum version but uses features which were added in versions:
+ * 1.1: {'meson.options file'}
+
+nix-store 2.25.3
+
+    can hardlink to symlink: NO
+
+nix-dev-shell 2.25.3
+
+  Subprojects
+    libcmd                : YES
+    libexpr               : YES
+    libexpr-c             : YES
+    libfetchers           : YES
+    libflake              : YES
+    libmain               : YES
+    libmain-c             : YES
+    libstore              : YES
+    libstore-c            : YES
+    libutil               : YES
+    libutil-c             : YES
+    nix                   : YES 6 warnings
+    nix-functional-tests  : YES 3 warnings
+
+  User defined options
+    auto_features         : auto
+    b_lto                 : true
+    b_lto_mode            : thin
+    b_staticpic           : true
+    bindings              : false
+    bindir                : /usr/bin
+    buildtype             : plain
+    datadir               : /usr/share
+    default_library       : shared
+    doc-gen               : false
+    includedir            : /usr/include
+    infodir               : /usr/share/info
+    libdir                : /usr/lib
+    libexecdir            : /usr/lib
+    localstatedir         : /var
+    mandir                : /usr/share/man
+    pkgconfig.relocatable : false
+    prefix                : /usr
+    python.bytecompile    : 0
+    sbindir               : /usr/bin
+    sharedstatedir        : /var/lib
+    sysconfdir            : /etc
+    unit-tests            : false
+    werror                : false
+    wrap_mode             : nodownload
+    libcmd:readline-flavor: readline
+    nix:profile-dir       : /etc/profile.d
+
+Found ninja-1.12.1 at /usr/bin/ninja
+[1/312] Compiling C++ object src/libutil/libnixutil.so.p/canon-path.cc.o
+[2/312] Compiling C++ object src/libutil/libnixutil.so.p/archive.cc.o
+[3/312] Compiling C++ object src/libutil/libnixutil.so.p/compression.cc.o
+[4/312] Compiling C++ object src/libutil/libnixutil.so.p/args.cc.o
+[5/312] Compiling C++ object src/libutil/libnixutil.so.p/compute-levels.cc.o
+[6/312] Compiling C++ object src/libutil/libnixutil.so.p/current-process.cc.o
+[7/312] Compiling C++ object src/libutil/libnixutil.so.p/english.cc.o
+[8/312] Compiling C++ object src/libutil/libnixutil.so.p/config.cc.o
+[9/312] Compiling C++ object src/libutil/libnixutil.so.p/config-global.cc.o
+[10/312] Compiling C++ object src/libutil/libnixutil.so.p/exit.cc.o
+[11/312] Compiling C++ object src/libutil/libnixutil.so.p/environment-variables.cc.o
+[12/312] Compiling C++ object src/libutil/libnixutil.so.p/executable-path.cc.o
+[13/312] Compiling C++ object src/libutil/libnixutil.so.p/error.cc.o
+[14/312] Compiling C++ object src/libutil/libnixutil.so.p/experimental-features.cc.o
+[15/312] Compiling C++ object src/libutil/libnixutil.so.p/file-content-address.cc.o
+[16/312] Compiling C++ object src/libutil/libnixutil.so.p/file-system.cc.o
+[17/312] Compiling C++ object src/libutil/libnixutil.so.p/file-descriptor.cc.o
+[18/312] Compiling C++ object src/libutil/libnixutil.so.p/fs-sink.cc.o
+[19/312] Compiling C++ object src/libutil/libnixutil.so.p/git.cc.o
+[20/312] Compiling C++ object src/libutil/libnixutil.so.p/hilite.cc.o
+[21/312] Compiling C++ object src/libutil/libnixutil.so.p/hash.cc.o
+[22/312] Compiling C++ object src/libutil/libnixutil.so.p/json-utils.cc.o
+[23/312] Compiling C++ object src/libutil/libnixutil.so.p/logging.cc.o
+[24/312] Compiling C++ object src/libutil/libnixutil.so.p/position.cc.o
+[25/312] Compiling C++ object src/libutil/libnixutil.so.p/memory-source-accessor.cc.o
+[26/312] Compiling C++ object src/libutil/libnixutil.so.p/posix-source-accessor.cc.o
+[27/312] Compiling C++ object src/libutil/libnixutil.so.p/references.cc.o
+[28/312] Compiling C++ object src/libutil/libnixutil.so.p/signature_local-keys.cc.o
+[29/312] Compiling C++ object src/libutil/libnixutil.so.p/serialise.cc.o
+[30/312] Compiling C++ object src/libutil/libnixutil.so.p/signature_signer.cc.o
+[31/312] Compiling C++ object src/libutil/libnixutil.so.p/source-accessor.cc.o
+[32/312] Compiling C++ object src/libutil/libnixutil.so.p/source-path.cc.o
+[33/312] Compiling C++ object src/libutil/libnixutil.so.p/strings.cc.o
+[34/312] Compiling C++ object src/libutil/libnixutil.so.p/suggestions.cc.o
+[35/312] Compiling C++ object src/libutil/libnixutil.so.p/tarfile.cc.o
+[36/312] Compiling C++ object src/libutil/libnixutil.so.p/terminal.cc.o
+[37/312] Compiling C++ object src/libutil/libnixutil.so.p/thread-pool.cc.o
+[38/312] Compiling C++ object src/libutil/libnixutil.so.p/unix-domain-socket.cc.o
+[39/312] Compiling C++ object src/libutil/libnixutil.so.p/users.cc.o
+[40/312] Compiling C++ object src/libutil/libnixutil.so.p/url.cc.o
+[41/312] Compiling C++ object src/libutil/libnixutil.so.p/xml-writer.cc.o
+[42/312] Compiling C++ object src/libutil/libnixutil.so.p/util.cc.o
+[43/312] Compiling C++ object src/libutil/libnixutil.so.p/linux_namespaces.cc.o
+[44/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_environment-variables.cc.o
+[45/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_file-descriptor.cc.o
+[46/312] Compiling C++ object src/libutil/libnixutil.so.p/linux_cgroup.cc.o
+[47/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_file-system.cc.o
+[48/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_file-path.cc.o
+[49/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_muxable-pipe.cc.o
+[50/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_os-string.cc.o
+[51/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_signals.cc.o
+[52/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_users.cc.o
+[53/312] Generating 'src/libstore/libnixstore.so.p/schema.sql.gen.hh'
+[54/312] Generating 'src/libstore/libnixstore.so.p/ca-specific-schema.sql.gen.hh'
+[55/312] Generating 'src/libexpr/libnixexpr.so.p/imported-drv-to-derivation.nix.gen.hh'
+[56/312] Compiling C++ object src/libutil/libnixutil.so.p/unix_processes.cc.o
+[57/312] Compiling C++ object src/libstore/libnixstore.so.p/build-result.cc.o
+[58/312] Compiling C++ object src/libstore/libnixstore.so.p/binary-cache-store.cc.o
+[59/312] Compiling C++ object src/libstore/libnixstore.so.p/build_derivation-goal.cc.o
+[60/312] Compiling C++ object src/libstore/libnixstore.so.p/build_drv-output-substitution-goal.cc.o
+[61/312] Compiling C++ object src/libstore/libnixstore.so.p/build_goal.cc.o
+[62/312] Compiling C++ object src/libstore/libnixstore.so.p/build_entry-points.cc.o
+[63/312] Generating src/libexpr/parser-tab.cc with a custom command
+[64/312] Compiling C++ object src/libstore/libnixstore.so.p/build_worker.cc.o
+[65/312] Compiling C++ object src/libstore/libnixstore.so.p/build_substitution-goal.cc.o
+[66/312] Compiling C++ object src/libstore/libnixstore.so.p/builtins_buildenv.cc.o
+[67/312] Compiling C++ object src/libstore/libnixstore.so.p/builtins_fetchurl.cc.o
+[68/312] Compiling C++ object src/libstore/libnixstore.so.p/common-protocol.cc.o
+[69/312] Compiling C++ object src/libstore/libnixstore.so.p/builtins_unpack-channel.cc.o
+[70/312] Compiling C++ object src/libstore/libnixstore.so.p/common-ssh-store-config.cc.o
+[71/312] Compiling C++ object src/libstore/libnixstore.so.p/daemon.cc.o
+[72/312] Compiling C++ object src/libstore/libnixstore.so.p/content-address.cc.o
+[73/312] Compiling C++ object src/libstore/libnixstore.so.p/derivations.cc.o
+[74/312] Compiling C++ object src/libstore/libnixstore.so.p/derived-path-map.cc.o
+[75/312] Compiling C++ object src/libstore/libnixstore.so.p/derived-path.cc.o
+[76/312] Compiling C++ object src/libstore/libnixstore.so.p/export-import.cc.o
+[77/312] Compiling C++ object src/libstore/libnixstore.so.p/downstream-placeholder.cc.o
+[78/312] Compiling C++ object src/libstore/libnixstore.so.p/dummy-store.cc.o
+[79/312] Compiling C++ object src/libstore/libnixstore.so.p/globals.cc.o
+[80/312] Compiling C++ object src/libstore/libnixstore.so.p/filetransfer.cc.o
+[81/312] Compiling C++ object src/libstore/libnixstore.so.p/gc.cc.o
+[82/312] Compiling C++ object src/libstore/libnixstore.so.p/indirect-root-store.cc.o
+[83/312] Compiling C++ object src/libstore/libnixstore.so.p/http-binary-cache-store.cc.o
+[84/312] Compiling C++ object src/libstore/libnixstore.so.p/keys.cc.o
+[85/312] Compiling C++ object src/libstore/libnixstore.so.p/legacy-ssh-store.cc.o
+[86/312] Compiling C++ object src/libstore/libnixstore.so.p/local-binary-cache-store.cc.o
+[87/312] Compiling C++ object src/libstore/libnixstore.so.p/local-fs-store.cc.o
+[88/312] Compiling C++ object src/libstore/libnixstore.so.p/log-store.cc.o
+[89/312] Compiling C++ object src/libstore/libnixstore.so.p/local-overlay-store.cc.o
+[90/312] Compiling C++ object src/libstore/libnixstore.so.p/machines.cc.o
+[91/312] Compiling C++ object src/libstore/libnixstore.so.p/make-content-addressed.cc.o
+[92/312] Compiling C++ object src/libstore/libnixstore.so.p/local-store.cc.o
+[93/312] Compiling C++ object src/libstore/libnixstore.so.p/misc.cc.o
+[94/312] Compiling C++ object src/libstore/libnixstore.so.p/names.cc.o
+[95/312] Compiling C++ object src/libstore/libnixstore.so.p/nar-accessor.cc.o
+[96/312] Compiling C++ object src/libstore/libnixstore.so.p/nar-info.cc.o
+[97/312] Compiling C++ object src/libstore/libnixstore.so.p/nar-info-disk-cache.cc.o
+[98/312] Compiling C++ object src/libstore/libnixstore.so.p/optimise-store.cc.o
+[99/312] Compiling C++ object src/libstore/libnixstore.so.p/outputs-spec.cc.o
+[100/312] Compiling C++ object src/libstore/libnixstore.so.p/path-references.cc.o
+[101/312] Compiling C++ object src/libstore/libnixstore.so.p/path-info.cc.o
+[102/312] Compiling C++ object src/libstore/libnixstore.so.p/parsed-derivations.cc.o
+[103/312] Compiling C++ object src/libstore/libnixstore.so.p/pathlocks.cc.o
+[104/312] Compiling C++ object src/libstore/libnixstore.so.p/path-with-outputs.cc.o
+[105/312] Compiling C++ object src/libstore/libnixstore.so.p/path.cc.o
+[106/312] Compiling C++ object src/libstore/libnixstore.so.p/posix-fs-canonicalise.cc.o
+[107/312] Compiling C++ object src/libstore/libnixstore.so.p/profiles.cc.o
+[108/312] Compiling C++ object src/libstore/libnixstore.so.p/realisation.cc.o
+[109/312] Compiling C++ object src/libstore/libnixstore.so.p/s3-binary-cache-store.cc.o
+[110/312] Compiling C++ object src/libstore/libnixstore.so.p/serve-protocol-connection.cc.o
+[111/312] Compiling C++ object src/libstore/libnixstore.so.p/serve-protocol.cc.o
+[112/312] Compiling C++ object src/libstore/libnixstore.so.p/remote-fs-accessor.cc.o
+[113/312] Compiling C++ object src/libstore/libnixstore.so.p/remote-store.cc.o
+[114/312] Compiling C++ object src/libstore/libnixstore.so.p/sqlite.cc.o
+[115/312] Compiling C++ object src/libstore/libnixstore.so.p/ssh.cc.o
+[116/312] Compiling C++ object src/libstore/libnixstore.so.p/ssh-store.cc.o
+[117/312] Compiling C++ object src/libstore/libnixstore.so.p/uds-remote-store.cc.o
+[118/312] Compiling C++ object src/libstore/libnixstore.so.p/store-api.cc.o
+[119/312] Compiling C++ object src/libstore/libnixstore.so.p/store-reference.cc.o
+[120/312] Compiling C++ object src/libstore/libnixstore.so.p/worker-protocol-connection.cc.o
+[121/312] Compiling C++ object src/libstore/libnixstore.so.p/linux_personality.cc.o
+[122/312] Compiling C++ object src/libstore/libnixstore.so.p/worker-protocol.cc.o
+[123/312] Compiling C++ object src/libstore/libnixstore.so.p/unix_build_child.cc.o
+[124/312] Compiling C++ object src/libstore/libnixstore.so.p/unix_build_hook-instance.cc.o
+[125/312] Compiling C++ object src/libstore/libnixstore.so.p/unix_pathlocks.cc.o
+[126/312] Compiling C++ object src/libstore/libnixstore.so.p/unix_user-lock.cc.o
+[127/312] Compiling C++ object src/libstore/libnixstore.so.p/unix_build_local-derivation-goal.cc.o
+[128/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/fetch-settings.cc.o
+[129/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/attrs.cc.o
+[130/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/cache.cc.o
+[131/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/fetch-to-store.cc.o
+[132/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/filtering-source-accessor.cc.o
+[133/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/fetchers.cc.o
+[134/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/github.cc.o
+[135/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/git-utils.cc.o
+[136/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/git.cc.o
+[137/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/indirect.cc.o
+[138/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/mercurial.cc.o
+[139/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/mounted-source-accessor.cc.o
+[140/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/path.cc.o
+[141/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/registry.cc.o
+[142/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/store-path-accessor.cc.o
+[143/312] Generating 'src/libexpr/libnixexpr.so.p/fetchurl.nix.gen.hh'
+[144/312] Generating 'src/libexpr/libnixexpr.so.p/call-flake.nix.gen.hh'
+[145/312] Generating 'src/libexpr/libnixexpr.so.p/primops/derivation.nix.gen.hh'
+[146/312] Compiling C++ object src/libfetchers/libnixfetchers.so.p/tarball.cc.o
+[147/312] Compiling C++ object src/libflake/libnixflake.so.p/flake_config.cc.o
+[148/312] Generating src/libexpr/lexer-tab.cc with a custom command
+../src/libexpr/lexer.l:324: warning, -s option given but default rule can be matched
+[149/312] Compiling C++ object src/libflake/libnixflake.so.p/flake_flake.cc.o
+[150/312] Compiling C++ object src/libflake/libnixflake.so.p/flake_flakeref.cc.o
+[151/312] Compiling C++ object src/libexpr/libnixexpr.so.p/meson-generated_.._lexer-tab.cc.o
+[152/312] Compiling C++ object src/libexpr/libnixexpr.so.p/meson-generated_.._parser-tab.cc.o
+src/libexpr/parser-tab.cc:1486:9: warning: variable 'yynerrs' set but not used [-Wunused-but-set-variable]
+ 1486 |     int yynerrs = 0;
+      |         ^
+1 warning generated.
+[153/312] Compiling C++ object src/libexpr/libnixexpr.so.p/eval-cache.cc.o
+[154/312] Compiling C++ object src/libexpr/libnixexpr.so.p/attr-path.cc.o
+[155/312] Compiling C++ object src/libexpr/libnixexpr.so.p/attr-set.cc.o
+[156/312] Compiling C++ object src/libexpr/libnixexpr.so.p/eval-settings.cc.o
+[157/312] Compiling C++ object src/libexpr/libnixexpr.so.p/eval-gc.cc.o
+[158/312] Compiling C++ object src/libexpr/libnixexpr.so.p/eval-error.cc.o
+[159/312] Compiling C++ object src/libexpr/libnixexpr.so.p/function-trace.cc.o
+[160/312] Compiling C++ object src/libexpr/libnixexpr.so.p/get-drvs.cc.o
+[161/312] Compiling C++ object src/libexpr/libnixexpr.so.p/eval.cc.o
+[162/312] Compiling C++ object src/libexpr/libnixexpr.so.p/lexer-helpers.cc.o
+[163/312] Compiling C++ object src/libexpr/libnixexpr.so.p/json-to-value.cc.o
+[164/312] Compiling C++ object src/libexpr/libnixexpr.so.p/nixexpr.cc.o
+[165/312] Compiling C++ object src/libexpr/libnixexpr.so.p/paths.cc.o
+[166/312] Compiling C++ object src/libexpr/libnixexpr.so.p/print-ambiguous.cc.o
+[167/312] Compiling C++ object src/libexpr/libnixexpr.so.p/print.cc.o
+[168/312] Compiling C++ object src/libexpr/libnixexpr.so.p/primops.cc.o
+[169/312] Compiling C++ object src/libexpr/libnixexpr.so.p/search-path.cc.o
+[170/312] Compiling C++ object src/libexpr/libnixexpr.so.p/value-to-json.cc.o
+[171/312] Compiling C++ object src/libexpr/libnixexpr.so.p/value-to-xml.cc.o
+[172/312] Compiling C++ object src/libexpr/libnixexpr.so.p/value_context.cc.o
+[173/312] Compiling C++ object src/libexpr/libnixexpr.so.p/primops_context.cc.o
+[174/312] Compiling C++ object src/libexpr/libnixexpr.so.p/primops_fetchClosure.cc.o
+[175/312] Compiling C++ object src/libexpr/libnixexpr.so.p/primops_fetchMercurial.cc.o
+[176/312] Compiling C++ object src/libexpr/libnixexpr.so.p/primops_fetchTree.cc.o
+[177/312] Compiling C++ object src/libflake/libnixflake.so.p/flake_lockfile.cc.o
+[178/312] Compiling C++ object src/libexpr/libnixexpr.so.p/primops_fromTOML.cc.o
+[179/312] Compiling C++ object src/libflake/libnixflake.so.p/flake_settings.cc.o
+[180/312] Compiling C++ object src/libflake/libnixflake.so.p/flake_url-name.cc.o
+[181/312] Compiling C++ object src/libmain/libnixmain.so.p/common-args.cc.o
+[182/312] Compiling C++ object src/libmain/libnixmain.so.p/loggers.cc.o
+[183/312] Compiling C++ object src/libmain/libnixmain.so.p/plugin.cc.o
+[184/312] Compiling C++ object src/libmain/libnixmain.so.p/progress-bar.cc.o
+[185/312] Compiling C++ object src/libmain/libnixmain.so.p/shared.cc.o
+[186/312] Compiling C++ object src/libmain/libnixmain.so.p/unix_stack.cc.o
+[187/312] Compiling C++ object src/libutil-c/libnixutilc.so.p/nix_api_util.cc.o
+[188/312] Compiling C++ object src/libcmd/libnixcmd.so.p/built-path.cc.o
+[189/312] Compiling C++ object src/libcmd/libnixcmd.so.p/command-installable-value.cc.o
+[190/312] Compiling C++ object src/libcmd/libnixcmd.so.p/editor-for.cc.o
+[191/312] Compiling C++ object src/libcmd/libnixcmd.so.p/common-eval-args.cc.o
+[192/312] Compiling C++ object src/libcmd/libnixcmd.so.p/command.cc.o
+[193/312] Compiling C++ object src/libcmd/libnixcmd.so.p/installable-derived-path.cc.o
+[194/312] Compiling C++ object src/libcmd/libnixcmd.so.p/installable-attr-path.cc.o
+[195/312] Compiling C++ object src/libcmd/libnixcmd.so.p/installable-flake.cc.o
+[196/312] Compiling C++ object src/libcmd/libnixcmd.so.p/legacy.cc.o
+[197/312] Compiling C++ object src/libcmd/libnixcmd.so.p/installable-value.cc.o
+[198/312] Compiling C++ object src/libcmd/libnixcmd.so.p/installables.cc.o
+[199/312] Compiling C++ object src/libcmd/libnixcmd.so.p/network-proxy.cc.o
+[200/312] Compiling C++ object src/libcmd/libnixcmd.so.p/markdown.cc.o
+[201/312] Compiling C++ object src/libcmd/libnixcmd.so.p/misc-store-flags.cc.o
+[202/312] Compiling C++ object src/libcmd/libnixcmd.so.p/repl-interacter.cc.o
+[203/312] Generating 'src/nix/nix.p/generate-manpage.nix.gen.hh'
+[204/312] Generating 'src/nix/nix.p/generate-settings.nix.gen.hh'
+[205/312] Generating 'src/nix/nix.p/generate-store-info.nix.gen.hh'
+[206/312] Compiling C++ object src/libstore-c/libnixstorec.so.p/nix_api_store.cc.o
+[207/312] Compiling C++ object src/libcmd/libnixcmd.so.p/repl.cc.o
+[208/312] Generating 'src/nix/nix.p/utils.nix.gen.hh'
+[209/312] Generating 'src/nix/nix.p/get-env.sh.gen.hh'
+[210/312] Generating 'src/nix/nix.p/profiles.md.gen.hh'
+[211/312] Generating 'src/nix/nix.p/help-stores.md.gen.hh'
+[212/312] Generating 'src/nix/nix.p/unpack-channel.nix.gen.hh'
+[213/312] Generating 'src/nix/nix.p/buildenv.nix.gen.hh'
+[214/312] Compiling C++ object src/libexpr-c/libnixexprc.so.p/nix_api_expr.cc.o
+[215/312] Compiling C++ object src/libexpr-c/libnixexprc.so.p/nix_api_external.cc.o
+[216/312] Compiling C++ object src/nix/nix.p/add-to-store.cc.o
+[217/312] Compiling C++ object src/nix/nix.p/app.cc.o
+[218/312] Compiling C++ object src/nix/nix.p/self-exe.cc.o
+[219/312] Compiling C++ object src/nix/nix.p/build.cc.o
+[220/312] Compiling C++ object src/nix/nix.p/bundle.cc.o
+[221/312] Compiling C++ object src/nix/nix.p/config-check.cc.o
+[222/312] Compiling C++ object src/nix/nix.p/cat.cc.o
+[223/312] Compiling C++ object src/nix/nix.p/copy.cc.o
+[224/312] Compiling C++ object src/nix/nix.p/config.cc.o
+[225/312] Compiling C++ object src/nix/nix.p/derivation-add.cc.o
+[226/312] Compiling C++ object src/nix/nix.p/derivation-show.cc.o
+[227/312] Compiling C++ object src/nix/nix.p/derivation.cc.o
+[228/312] Compiling C++ object src/nix/nix.p/develop.cc.o
+[229/312] Compiling C++ object src/nix/nix.p/diff-closures.cc.o
+[230/312] Compiling C++ object src/nix/nix.p/dump-path.cc.o
+[231/312] Compiling C++ object src/nix/nix.p/edit.cc.o
+[232/312] Compiling C++ object src/nix/nix.p/env.cc.o
+[233/312] Compiling C++ object src/nix/nix.p/eval.cc.o
+[234/312] Compiling C++ object src/nix/nix.p/fmt.cc.o
+[235/312] Compiling C++ object src/nix/nix.p/hash.cc.o
+[236/312] Compiling C++ object src/nix/nix.p/flake.cc.o
+[237/312] Compiling C++ object src/nix/nix.p/log.cc.o
+[238/312] Compiling C++ object src/nix/nix.p/ls.cc.o
+[239/312] Compiling C++ object src/nix/nix.p/make-content-addressed.cc.o
+[240/312] Compiling C++ object src/nix/nix.p/main.cc.o
+[241/312] Compiling C++ object src/nix/nix.p/nar.cc.o
+[242/312] Compiling C++ object src/nix/nix.p/optimise-store.cc.o
+[243/312] Compiling C++ object src/nix/nix.p/path-from-hash-part.cc.o
+[244/312] Compiling C++ object src/nix/nix.p/path-info.cc.o
+[245/312] Compiling C++ object src/nix/nix.p/prefetch.cc.o
+[246/312] Compiling C++ object src/nix/nix.p/registry.cc.o
+[247/312] Compiling C++ object src/nix/nix.p/profile.cc.o
+[248/312] Compiling C++ object src/nix/nix.p/realisation.cc.o
+[249/312] Compiling C++ object src/nix/nix.p/repl.cc.o
+[250/312] Compiling C++ object src/nix/nix.p/run.cc.o
+[251/312] Compiling C++ object src/nix/nix.p/sigs.cc.o
+[252/312] Compiling C++ object src/nix/nix.p/search.cc.o
+[253/312] Compiling C++ object src/nix/nix.p/store-copy-log.cc.o
+[254/312] Compiling C++ object src/nix/nix.p/store-gc.cc.o
+[255/312] Compiling C++ object src/nix/nix.p/store-delete.cc.o
+[256/312] Compiling C++ object src/nix/nix.p/store-info.cc.o
+[257/312] Compiling C++ object src/nix/nix.p/store-repair.cc.o
+[258/312] Compiling C++ object src/nix/nix.p/upgrade-nix.cc.o
+[259/312] Compiling C++ object src/nix/nix.p/store.cc.o
+[260/312] Compiling C++ object src/nix/nix.p/why-depends.cc.o
+[261/312] Compiling C++ object src/nix/nix.p/verify.cc.o
+[262/312] Compiling C++ object src/nix/nix.p/unix_daemon.cc.o
+[263/312] Compiling C++ object src/nix/nix.p/nix-build_nix-build.cc.o
+[264/312] Compiling C++ object src/nix/nix.p/nix-collect-garbage_nix-collect-garbage.cc.o
+[265/312] Compiling C++ object src/nix/nix.p/nix-copy-closure_nix-copy-closure.cc.o
+[266/312] Compiling C++ object src/nix/nix.p/nix-env_user-env.cc.o
+[267/312] Compiling C++ object src/nix/nix.p/nix-instantiate_nix-instantiate.cc.o
+[268/312] Compiling C++ object src/nix/nix.p/nix-env_nix-env.cc.o
+[269/312] Compiling C++ object src/nix/nix.p/nix-store_graphml.cc.o
+[270/312] Compiling C++ object src/nix/nix.p/nix-store_dotgraph.cc.o
+[271/312] Compiling C++ object src/nix/nix.p/build-remote_build-remote.cc.o
+[272/312] Compiling C++ object src/nix/nix.p/nix-store_nix-store.cc.o
+[273/312] Compiling C++ object src/nix/nix.p/nix-channel_nix-channel.cc.o
+[274/312] Compiling C++ object src/libmain-c/libnixmainc.so.p/nix_api_main.cc.o
+[275/312] Compiling C++ object src/libexpr-c/libnixexprc.so.p/nix_api_value.cc.o
+[276/312] Generating src/nix/nix-build with a custom command (wrapped by meson to set env)
+[277/312] Compiling C++ object src/nix-functional-tests/test-libstoreconsumer/test-libstoreconsumer.p/main.cc.o
+[278/312] Generating src/nix/nix-channel with a custom command (wrapped by meson to set env)
+[279/312] Generating src/nix/nix-collect-garbage with a custom command (wrapped by meson to set env)
+[280/312] Generating src/nix/nix-copy-closure with a custom command (wrapped by meson to set env)
+[281/312] Generating src/nix/nix-env with a custom command (wrapped by meson to set env)
+[282/312] Generating src/nix/nix-daemon with a custom command (wrapped by meson to set env)
+[283/312] Generating src/nix/nix-hash with a custom command (wrapped by meson to set env)
+[284/312] Generating src/nix/nix-instantiate with a custom command (wrapped by meson to set env)
+[285/312] Generating src/nix/nix-prefetch-url with a custom command (wrapped by meson to set env)
+[286/312] Generating src/nix/nix-shell with a custom command (wrapped by meson to set env)
+[287/312] Generating src/nix/nix-store with a custom command (wrapped by meson to set env)
+[288/312] Generating src/nix/build-remote with a custom command (wrapped by meson to set env)
+[289/312] Compiling C++ object src/nix-functional-tests/plugins/libplugintest.so.p/plugintest.cc.o
+[290/312] Linking target src/libutil/libnixutil.so
+[291/312] Generating symbol file src/libutil/libnixutil.so.p/libnixutil.so.symbols
+[292/312] Linking target src/libutil-c/libnixutilc.so
+[293/312] Generating symbol file src/libutil-c/libnixutilc.so.p/libnixutilc.so.symbols
+[294/312] Linking target src/libstore/libnixstore.so
+[295/312] Generating symbol file src/libstore/libnixstore.so.p/libnixstore.so.symbols
+[296/312] Linking target src/nix-functional-tests/test-libstoreconsumer/test-libstoreconsumer
+[297/312] Linking target src/libstore-c/libnixstorec.so
+[298/312] Generating symbol file src/libstore-c/libnixstorec.so.p/libnixstorec.so.symbols
+[299/312] Linking target src/libmain/libnixmain.so
+[300/312] Generating symbol file src/libmain/libnixmain.so.p/libnixmain.so.symbols
+[301/312] Linking target src/libmain-c/libnixmainc.so
+[302/312] Linking target src/libfetchers/libnixfetchers.so
+[303/312] Generating symbol file src/libfetchers/libnixfetchers.so.p/libnixfetchers.so.symbols
+[304/312] Linking target src/libexpr/libnixexpr.so
+[305/312] Generating symbol file src/libexpr/libnixexpr.so.p/libnixexpr.so.symbols
+[306/312] Linking target src/nix-functional-tests/plugins/libplugintest.so
+[307/312] Linking target src/libexpr-c/libnixexprc.so
+[308/312] Linking target src/libflake/libnixflake.so
+[309/312] Generating symbol file src/libflake/libnixflake.so.p/libnixflake.so.symbols
+[310/312] Linking target src/libcmd/libnixcmd.so
+[311/312] Generating symbol file src/libcmd/libnixcmd.so.p/libnixcmd.so.symbols
+[312/312] Linking target src/nix/nix
+Installing src/libutil/libnixutil.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libstore/libnixstore.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libfetchers/libnixfetchers.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libexpr/parser-tab.cc to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing src/libexpr/parser-tab.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing src/libexpr/lexer-tab.cc to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing src/libexpr/lexer-tab.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing src/libexpr/libnixexpr.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libflake/libnixflake.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libmain/libnixmain.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libcmd/libnixcmd.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/nix/nix to /destdir/nix-2.25.3/nix/usr/bin
+Installing src/libutil-c/libnixutilc.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libstore-c/libnixstorec.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libexpr-c/libnixexprc.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing src/libmain-c/libnixmainc.so to /destdir/nix-2.25.3/nix/usr/lib
+Installing /builddir/nix-2.25.3/build/src/libutil/config-util.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/abstract-setting-to-json.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/ansicolor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/archive.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/args.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/callback.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/canon-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/checked-arithmetic.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/chunked-vector.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/closure.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/comparator.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/compression.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/compute-levels.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/config-global.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/config-impl.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/config.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/current-process.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/english.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/environment-variables.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/error.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/exec.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/executable-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/exit.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/experimental-features.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/file-content-address.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/file-descriptor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/file-path-impl.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/file-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/file-system.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/finally.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/fmt.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/fs-sink.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/git.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/hash.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/hilite.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/json-impls.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/json-utils.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/logging.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/lru-cache.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/memory-source-accessor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/muxable-pipe.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/os-string.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/pool.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/position.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/posix-source-accessor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/processes.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/ref.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/references.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/regex-combinators.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/repair-flag.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/serialise.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/signals.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/source-accessor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/source-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/split.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/std-hash.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/strings.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/strings-inline.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/suggestions.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/sync.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/tarfile.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/terminal.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/thread-pool.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/topo-sort.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/types.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/unix-domain-socket.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/url-parts.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/url.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/users.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/util.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/variant-wrapper.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/xml-writer.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/linux/cgroup.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/linux/namespaces.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/unix/monitor-fd.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/unix/signals-impl.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil/args/root.hh to /destdir/nix-2.25.3/nix/usr/include/nix/args
+Installing /builddir/nix-2.25.3/src/libutil/signature/local-keys.hh to /destdir/nix-2.25.3/nix/usr/include/nix/signature
+Installing /builddir/nix-2.25.3/src/libutil/signature/signer.hh to /destdir/nix-2.25.3/nix/usr/include/nix/signature
+Installing /builddir/nix-2.25.3/build/src/libstore/config-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/binary-cache-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/build-result.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/builtins.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/common-protocol-impl.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/common-protocol.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/common-ssh-store-config.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/content-address.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/daemon.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/derivations.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/derived-path-map.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/derived-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/downstream-placeholder.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/filetransfer.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/gc-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/globals.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/http-binary-cache-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/indirect-root-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/keys.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/legacy-ssh-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/length-prefixed-protocol-helper.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/local-binary-cache-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/local-fs-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/local-overlay-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/local-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/log-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/machines.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/make-content-addressed.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/names.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/nar-accessor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/nar-info-disk-cache.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/nar-info.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/outputs-spec.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/parsed-derivations.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/path-info.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/path-references.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/path-regex.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/path-with-outputs.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/pathlocks.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/posix-fs-canonicalise.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/profiles.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/realisation.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/remote-fs-accessor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/remote-store-connection.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/remote-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/s3-binary-cache-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/s3.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/ssh-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/serve-protocol-connection.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/serve-protocol-impl.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/serve-protocol.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/sqlite.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/ssh.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/store-api.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/store-cast.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/store-dir-config.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/store-reference.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/uds-remote-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/worker-protocol-connection.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/worker-protocol-impl.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/worker-protocol.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/linux/fchmodat2-compat.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/linux/personality.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/unix/user-lock.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore/build/derivation-goal.hh to /destdir/nix-2.25.3/nix/usr/include/nix/build
+Installing /builddir/nix-2.25.3/src/libstore/build/drv-output-substitution-goal.hh to /destdir/nix-2.25.3/nix/usr/include/nix/build
+Installing /builddir/nix-2.25.3/src/libstore/build/goal.hh to /destdir/nix-2.25.3/nix/usr/include/nix/build
+Installing /builddir/nix-2.25.3/src/libstore/build/substitution-goal.hh to /destdir/nix-2.25.3/nix/usr/include/nix/build
+Installing /builddir/nix-2.25.3/src/libstore/build/worker.hh to /destdir/nix-2.25.3/nix/usr/include/nix/build
+Installing /builddir/nix-2.25.3/src/libstore/unix/build/child.hh to /destdir/nix-2.25.3/nix/usr/include/nix/build
+Installing /builddir/nix-2.25.3/src/libstore/unix/build/hook-instance.hh to /destdir/nix-2.25.3/nix/usr/include/nix/build
+Installing /builddir/nix-2.25.3/src/libstore/unix/build/local-derivation-goal.hh to /destdir/nix-2.25.3/nix/usr/include/nix/build
+Installing /builddir/nix-2.25.3/src/libstore/builtins/buildenv.hh to /destdir/nix-2.25.3/nix/usr/include/nix/builtins
+Installing /builddir/nix-2.25.3/src/libfetchers/attrs.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/cache.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/fetch-settings.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/fetch-to-store.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/filtering-source-accessor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/git-utils.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/mounted-source-accessor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/fetchers.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/registry.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/store-path-accessor.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libfetchers/tarball.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/build/src/libexpr/config-expr.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/attr-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/attr-set.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/eval-cache.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/eval-error.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/eval-gc.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/eval-inline.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/eval-settings.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/eval.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/function-trace.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/gc-small-vector.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/get-drvs.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/json-to-value.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/nixexpr.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/parser-state.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/pos-idx.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/pos-table.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/primops.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/print-ambiguous.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/print-options.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/print.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/repl-exit-status.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/search-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/symbol-table.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/value-to-json.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/value-to-xml.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/value.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr/value/context.hh to /destdir/nix-2.25.3/nix/usr/include/nix/value
+Installing /builddir/nix-2.25.3/src/libflake/flake/flake.hh to /destdir/nix-2.25.3/nix/usr/include/nix/flake
+Installing /builddir/nix-2.25.3/src/libflake/flake/flakeref.hh to /destdir/nix-2.25.3/nix/usr/include/nix/flake
+Installing /builddir/nix-2.25.3/src/libflake/flake/lockfile.hh to /destdir/nix-2.25.3/nix/usr/include/nix/flake
+Installing /builddir/nix-2.25.3/src/libflake/flake/settings.hh to /destdir/nix-2.25.3/nix/usr/include/nix/flake
+Installing /builddir/nix-2.25.3/src/libflake/flake/url-name.hh to /destdir/nix-2.25.3/nix/usr/include/nix/flake
+Installing /builddir/nix-2.25.3/build/src/libmain/config-main.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libmain/common-args.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libmain/loggers.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libmain/plugin.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libmain/progress-bar.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libmain/shared.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/build/src/libcmd/config-cmd.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/built-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/command-installable-value.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/command.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/common-eval-args.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/compatibility-settings.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/editor-for.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/installable-attr-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/installable-derived-path.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/installable-flake.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/installable-value.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/installables.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/legacy.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/markdown.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/misc-store-flags.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/network-proxy.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/repl-interacter.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libcmd/repl.hh to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/build/src/libutil-c/config-util.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil-c/nix_api_util.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libutil-c/nix_api_util_internal.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/build/src/libstore-c/config-store.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore-c/nix_api_store.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libstore-c/nix_api_store_internal.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/build/src/libexpr-c/config-expr.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr-c/nix_api_expr.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr-c/nix_api_external.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr-c/nix_api_value.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libexpr-c/nix_api_expr_internal.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/build/src/libmain-c/config-main.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/src/libmain-c/nix_api_main.h to /destdir/nix-2.25.3/nix/usr/include/nix
+Installing /builddir/nix-2.25.3/build/meson-private/nix-util.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-store.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-fetchers.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-expr.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-flake.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-main.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-cmd.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/src/nix/scripts/nix.sh to /destdir/nix-2.25.3/nix/etc/profile.d
+Installing /builddir/nix-2.25.3/build/src/nix/scripts/nix.fish to /destdir/nix-2.25.3/nix/etc/profile.d
+Installing /builddir/nix-2.25.3/build/src/nix/scripts/nix-daemon.sh to /destdir/nix-2.25.3/nix/etc/profile.d
+Installing /builddir/nix-2.25.3/build/src/nix/scripts/nix-daemon.fish to /destdir/nix-2.25.3/nix/etc/profile.d
+Installing /builddir/nix-2.25.3/build/src/nix/misc/bash/nix to /destdir/nix-2.25.3/nix/usr/share/bash-completion/completions
+Installing /builddir/nix-2.25.3/build/src/nix/misc/fish/nix.fish to /destdir/nix-2.25.3/nix/usr/share/fish/vendor_completions.d
+Installing /builddir/nix-2.25.3/build/src/nix/misc/zsh/_nix to /destdir/nix-2.25.3/nix/usr/share/zsh/site-functions
+Installing /builddir/nix-2.25.3/build/src/nix/misc/zsh/run-help-nix to /destdir/nix-2.25.3/nix/usr/share/zsh/site-functions
+Installing /builddir/nix-2.25.3/build/src/nix/misc/systemd/nix-daemon.socket to /destdir/nix-2.25.3/nix/usr/lib/systemd/system
+Installing /builddir/nix-2.25.3/build/src/nix/misc/systemd/nix-daemon.service to /destdir/nix-2.25.3/nix/usr/lib/systemd/system
+Installing /builddir/nix-2.25.3/build/src/nix/misc/systemd/nix-daemon.conf to /destdir/nix-2.25.3/nix/usr/lib/tmpfiles.d
+Installing /builddir/nix-2.25.3/build/meson-private/nix-util-c.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-store-c.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-expr-c.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing /builddir/nix-2.25.3/build/meson-private/nix-main-c.pc to /destdir/nix-2.25.3/nix/usr/lib/pkgconfig
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-build
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-channel
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-collect-garbage
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-copy-closure
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-daemon
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-env
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-hash
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-instantiate
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-prefetch-url
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-shell
+Installing symlink pointing to nix to /destdir/nix-2.25.3/nix/usr/bin/nix-store
+Installing symlink pointing to ../../bin/nix to /destdir/nix-2.25.3/nix/usr/lib/nix/build-remote
+0:00:00.079 => nix-2.25.3-r0: cleaning build directory...
+0:00:00.099 => nix-2.25.3-r0: start build (target: pkg), available hardening:
+0:00:00.099 =>   +format +int +pie +scp +ssp +var-init
+0:00:00.099 =>   -bti -cet -cfi -cfi-genptr -cfi-icall -pac -sst -vis
+0:00:00.100 => nix-2.25.3-r0: running fetch hook: 000_sources...
+0:00:00.111 => cbuild: updating software in /home/mathijs/projects/cports/bldroot container...
+0:00:15.006 => cbuild: cleaning world...
+0:00:15.007 => nix-2.25.3-r0: building [meson] for x86_64...
+  [host] meson: found (1.6.0-r1)
+  [host] bison: found (3.8.2-r1)
+  [host] flex: found (2.6.4-r1)
+  [host] cmake: found (3.31.3-r0)
+  [host] pkgconf: found (2.3.0-r1)
+  [host] bash: found (5.2.37-r1)
+  [target] boost-devel: found (1.87.0-r0)
+  [target] openssl-devel: found (3.4.0-r2)
+  [target] libarchive-devel: found (3.7.7-r0)
+  [target] libsodium-devel: found (1.0.20-r0)
+  [target] brotli-devel: found (1.1.0-r0)
+  [target] nlohmann-json: found (3.11.3-r1)
+  [target] curl-devel: found (8.11.1-r0)
+  [target] libseccomp-devel: found (2.5.5-r1)
+  [target] sqlite-devel: found (3.47.2-r0)
+  [target] gc-devel: found (8.2.8-r1)
+  [target] libedit-readline-devel: found (20240711-r1)
+  [target] lowdown-devel: found (1.4.0-r0)
+  [target] libgit2-devel: found (1.9.0-r0)
+  [target] toml11: found (4.2.0-r0)
+  [runtime] libedit-readline-devel>=0: found (20240711-r1)
+0:00:15.734 => nix-2.25.3-r0: installing build dependencies: bash=5.2.37-r1, bison=3.8.2-r1, boost-devel=1.87.0-r0, brotli-devel=1.1.0-r0, cmake=3.31.3-r0, curl-devel=8.11.1-r0, flex=2.6.4-r1, gc-devel=8.2.8-r1, libarchive-devel=3.7.7-r0, libedit-readline-devel=20240711-r1, libgit2-devel=1.9.0-r0, libseccomp-devel=2.5.5-r1, libsodium-devel=1.0.20-r0, lowdown-devel=1.4.0-r0, meson=1.6.0-r1, nlohmann-json=3.11.3-r1, openssl-devel=3.4.0-r2, pkgconf=2.3.0-r1, sqlite-devel=3.47.2-r0, toml11=4.2.0-r0
+0:00:15.915 => nix-2.25.3-r0: running extract hook: 000_sources...
+0:00:16.174 => nix-2.25.3-r0: running prepare hook: 000_script_wrapper...
+0:00:16.185 => nix-2.25.3-r0: running prepare hook: 001_prepare_users...
+0:00:16.190 => nix-2.25.3-r0: running patch hook: 000_patches...
+0:00:16.212 => nix-2.25.3-r0: patching: coreutils.patch
+0:00:16.221 => nix-2.25.3-r0: patching: lowdown.patch
+0:00:16.224 => nix-2.25.3-r0: patching: syscall.patch
+0:00:16.231 => nix-2.25.3-r0: running setup hook: 000_env_pkg_config...
+0:00:16.234 => nix-2.25.3-r0: running setup hook: 001_lang_vers...
+0:00:16.236 => nix-2.25.3-r0: running configure...
+0:00:28.472 => nix-2.25.3-r0: running build...
+0:04:36.373 => nix-2.25.3-r0: skipping check (disabled by template)
+0:04:36.483 => nix-2.25.3-r0: running install...
+0:04:38.355 => nix-2.25.3-r0: running post_install...
+0:04:38.378 => nix-devel-2.25.3-r0: running pkg_install...
+0:04:38.390 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixcmd.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.391 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixflake.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.392 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixexprc.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.392 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixutilc.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.393 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixexpr.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.393 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixstorec.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.395 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixstore.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.396 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixmainc.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.396 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixmain.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.397 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixutil.so: unsuffixed ELF .so encountered, skipping for devel
+0:04:38.398 => nix-devel-2.25.3-r0: WARNING: /home/mathijs/projects/cports/bldroot/destdir/nix-2.25.3/nix/usr/lib/libnixfetchers.so: unsuffixed ELF .so encountered, skipping for devel
+  take: usr/lib/pkgconfig
+  take: usr/include
+0:04:38.453 => nix-devel-2.25.3-r0: running destdir hook: 000_handle_modes...
+0:04:38.457 => nix-devel-2.25.3-r0: running destdir hook: 001_hardlinks...
+0:04:38.462 => nix-devel-2.25.3-r0: running destdir hook: 002_uncompress_manpages...
+0:04:38.466 => nix-devel-2.25.3-r0: running destdir hook: 003_remove_misc...
+0:04:38.468 => nix-devel-2.25.3-r0: running destdir hook: 004_remove_libtool_archives...
+0:04:38.472 => nix-devel-2.25.3-r0: running destdir hook: 005_remove_perl_files...
+0:04:38.482 => nix-devel-2.25.3-r0: running destdir hook: 006_protected_paths...
+0:04:38.484 => nix-devel-2.25.3-r0: running destdir hook: 007_strip_debug...
+0:04:38.598 => nix-devel-2.25.3-r0: running destdir hook: 008_rename_python_bindings...
+0:04:38.602 => nix-devel-2.25.3-r0: running destdir hook: 009_remove_pkgconf_sysroot...
+0:04:38.610 => nix-devel-2.25.3-r0: running destdir hook: 100_rewrite_python_shebang...
+0:04:38.630 => nix-devel-2.25.3-r0: running destdir hook: 199_recompress_manpages...
+0:04:38.648 => nix-2.25.3-r0: running destdir hook: 000_handle_modes...
+0:04:38.651 => nix-2.25.3-r0: running destdir hook: 001_hardlinks...
+0:04:38.653 => nix-2.25.3-r0: running destdir hook: 002_uncompress_manpages...
+0:04:38.656 => nix-2.25.3-r0: running destdir hook: 003_remove_misc...
+0:04:38.658 => nix-2.25.3-r0: running destdir hook: 004_remove_libtool_archives...
+0:04:38.661 => nix-2.25.3-r0: running destdir hook: 005_remove_perl_files...
+0:04:38.665 => nix-2.25.3-r0: running destdir hook: 006_protected_paths...
+0:04:38.667 => nix-2.25.3-r0: running destdir hook: 007_strip_debug...
+  pie executable: usr/bin/nix
+  library: usr/lib/libnixcmd.so
+  library: usr/lib/libnixflake.so
+  library: usr/lib/libnixexprc.so
+  library: usr/lib/libnixutilc.so
+  library: usr/lib/libnixexpr.so
+  library: usr/lib/libnixstorec.so
+  library: usr/lib/libnixstore.so
+  library: usr/lib/libnixmainc.so
+  library: usr/lib/libnixmain.so
+  library: usr/lib/libnixutil.so
+  library: usr/lib/libnixfetchers.so
+0:04:40.272 => nix-2.25.3-r0: running destdir hook: 008_rename_python_bindings...
+0:04:40.275 => nix-2.25.3-r0: running destdir hook: 009_remove_pkgconf_sysroot...
+0:04:40.277 => nix-2.25.3-r0: running destdir hook: 100_rewrite_python_shebang...
+0:04:40.288 => nix-2.25.3-r0: running destdir hook: 199_recompress_manpages...
+0:04:40.291 => nix-devel-2.25.3-r0: splitting autopackages...
+0:04:40.302 => nix-2.25.3-r0: splitting autopackages...
+  take: usr/share/bash-completion
+  take: usr/share/zsh/site-functions
+  take: usr/share/fish/vendor_completions.d
+  clean empty: usr/share/zsh
+  clean empty: usr/share/fish
+  clean empty: usr/share
+0:04:40.311 => nix-devel-2.25.3-r0: running pkg hook: 001_runtime_deps...
+  pc: nlohmann_json>=3.9 (provider: nlohmann-json)
+  pc: libgit2 (provider: libgit2-devel)
+  pc: libarchive>=3.1.2 (provider: libarchive-devel)
+  pc: libcurl (provider: curl-devel)
+  pc: libseccomp>=2.5.5 (provider: libseccomp-devel)
+  pc: sqlite3>=3.6.19 (provider: sqlite-devel)
+  pc: bdw-gc (provider: gc-devel)
+  pc: libcrypto>=1.1.1 (provider: openssl-devel)
+  pc: libsodium (provider: libsodium-devel)
+  pc: libbrotlicommon (provider: brotli-devel)
+  pc: libbrotlidec (provider: brotli-devel)
+  pc: libbrotlienc (provider: brotli-devel)
+  pc: lowdown>=0.9.0 (provider: lowdown-devel)
+0:04:41.377 => nix-devel-2.25.3-r0: ERROR:   pc: readline (unknown provider)
+  hint: add package providing 'readline' to 'makedepends'
