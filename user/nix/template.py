@@ -41,12 +41,6 @@ hostmakedepends = [
     # it requires network.
     #"doxygen",
     #"mdbook", # not upstreamed
-
-    # bindings target (wip)
-    # generates bindings for perl language
-    #"perl",
-    #"curl",
-    # needs libdbi for perl, but not packaged yet
 ]
 makedepends = [
     "boost-devel",
