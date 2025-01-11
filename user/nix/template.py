@@ -25,8 +25,9 @@ configure_args = [
     "-Dunit-tests=false",
 
     ### WIP ###
-    # switch from editline to libedit
-    "-Dlibcmd:readline-flavor=readline",
+    # switch from editline to libedit:
+    # added a patch to select libedit instead of editline or readline
+    "-Dlibcmd:readline-flavor=libedit",
 ]
 hostmakedepends = [
     "meson",
@@ -59,8 +60,9 @@ makedepends = [
 
 
     # TODO: switch from editline to libedit
-    "editline-devel",   # not upstreamed
-    #"libedit-readline-devel",
+    #"editline-devel",   # not upstreamed
+    "libedit-devel",
+    #"libedit-readline-devel", # readline compatible version
 
 
     # libcpuid is an optional dependency:
