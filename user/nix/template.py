@@ -24,10 +24,8 @@ configure_args = [
     # We don't do test as it requires network, so don't build them.
     "-Dunit-tests=false",
 
-    ### WIP ###
-    # switch from editline to libedit:
-    # added a patch to select libedit instead of editline or readline
-    "-Dlibcmd:readline-flavor=libedit",
+    # added a patch to use libedit instead of editline or readline
+    "-Dlibcmd:readline-flavor=readline",
 ]
 hostmakedepends = [
     "meson",
@@ -59,10 +57,10 @@ makedepends = [
     "toml11",           # not upstreamed
 
 
-    # TODO: switch from editline to libedit
-    #"editline-devel",   # not upstreamed
+    # use libedit from chimera, instead of editline or readline which
+    # nix supports. It works, but tab completion and history in nix repl
+    # don't work on both realine and libedit...
     "libedit-devel",
-    #"libedit-readline-devel", # readline compatible version
 
 
     # libcpuid is an optional dependency:
@@ -98,26 +96,4 @@ def post_install(self):
 
 @subpackage("nix-devel")
 def _(self):
-    '''
-    self.depends = [
-        "pc:nlohmann_json>=3.9!nlohmann-json",
-        "pc:libgit2!libgit2-devel",
-        "pc:libarchive>=3.1.2!libarchive-devel",
-        "pc:libcurl!curl-devel",
-        "pc:libseccomp>=2.5.5!libseccomp-devel",
-        "pc:sqlite3>=3.6.19!sqlite-devel",
-        "pc:bdw-gc!gc-devel",
-        "pc:libcrypto>=1.1.1!openssl-devel",
-        "pc:libsodium!libsodium-devel",
-        "pc:libbrotlicommon!brotli-devel",
-        "pc:libbrotlidec!brotli-devel",
-        "pc:libbrotlienc!brotli-devel",
-        "pc:lowdown>=0.9.0!lowdown-devel",
-        #"pc:libcpuid!libcpuid-devel",
-        "libedit-readline-devel", # does not provide pc:readline according to apk, but does have the .pc file
-        #"boost-devel",
-        #"toml11",
-    ]
-    self.options = [ "!scanrundeps" ]
-    '''
     return self.default_devel()
