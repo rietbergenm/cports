@@ -6,12 +6,14 @@ pkgrel = 0
 build_style = "cmake"
 configure_args = [
     f"-DPKG_CONFIG_VERSION={pkgver}",
-    "-DBUILD_SHARED_LIBS=ON"
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DRC_ENABLE_GTEST=ON",
 ]
 hostmakedepends = [
     "cmake",
     "ninja",
     "pkgconf",
+    "gtest-devel",
 ]
 pkgdesc = "Testing framework for C++"
 maintainer = "Mathijs Rietbergen <mathijs.rietbergen@proton.me>"
