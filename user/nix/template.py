@@ -63,6 +63,7 @@ license = "LGPL-2.1-or-later"
 url = "https://github.com/NixOS/nix"
 source = f"{url}/archive/refs/tags/{pkgver}.tar.gz"
 sha256 = "8d7af0d25371da32783f0b46bce8ff4f0d1dd996db6dee272faf306fcb8e2073"
+hardening = [ "!int" ] # without this, it constantly fails with illegal instructions
 
 
 def post_install(self):
