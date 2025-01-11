@@ -3,14 +3,30 @@ pkgver = "2.25.3"
 pkgrel = 0
 build_style = "meson"
 configure_args = [
-    "--libexecdir=/usr/lib", #XXX: no /usr/libexec
-    "-Dnix:profile-dir=/etc/profile.d", # defaults to etc/profile.d which becomes /usr/etc/profile.d with the prefix
-    #"-Dlibcmd:readline-flavor=readline",
-    # next one fixes "ERROR: clang does not know how to do prelinking."
+    # Use /usr/lib instead of /usr/libexec
+    "--libexecdir=/usr/lib",
+
+    # profile-dir defaults to etc/profile.d which becomes
+    # /usr/etc/profile.d with the prefix /usr. This is wrong,
+    # we want these system files to go in /etc/profile.d.
+    "-Dnix:profile-dir=/etc/profile.d",
+
+    # We need the below to fix "ERROR: clang does not know how to do prelinking."
     "-Ddefault_library=shared",
-    "-Ddoc-gen=false",   # needs internet
-    "-Dbindings=false",  # we don't need the perl bindings
-    "-Dunit-tests=false" # requires rapidcheck which is not packaged
+
+    # The doc-gen target requires network to download from nixpkgs.
+    # We don't have network in the build phase, so we don't do it.
+    "-Ddoc-gen=false",
+
+    # We don't need the perl bindings (and don't have the dependencies to build it).
+    "-Dbindings=false",
+
+    # We don't do test as it requires network, so don't build them.
+    "-Dunit-tests=false",
+
+    ### WIP ###
+    # switch from editline to libedit
+    "-Dlibcmd:readline-flavor=readline",
 ]
 hostmakedepends = [
     "meson",
@@ -20,16 +36,16 @@ hostmakedepends = [
     "pkgconf",
     "bash",
 
-    # doc-gen target requires internet because
-    # it uses nix to run stuff and nix needs internet to download
-    # dependecies (it has just been built)
+    # These are needed for the doc-gen target,
+    # but we are currently not building that as
+    # it requires network.
     #"doxygen",
-    #"mdbook", # packaged myself
+    #"mdbook", # not upstreamed
 
     # bindings target (wip)
     # generates bindings for perl language
     #"perl",
-    #"curl"
+    #"curl",
     # needs libdbi for perl, but not packaged yet
 ]
 makedepends = [
@@ -43,34 +59,46 @@ makedepends = [
     "libseccomp-devel",
     "sqlite-devel",
     "gc-devel",
-    #"libedit-readline-devel",
     "lowdown-devel",
-    "libgit2-devel", # XXX: should be newer that 1.9.0
-    "toml11", # packaged myself
-    "editline-devel",
-    # TODO: check if only for x86_64 or for all
-    # seems to only use this library on x86_64
-    #"libcpuid-devel" 
+    "libgit2-devel",    # should be newer that 1.9.0 (1.8.9 in upstream)
+    "toml11",           # not upstreamed
+
+
+    # TODO: switch from editline to libedit
+    "editline-devel",   # not upstreamed
+    #"libedit-readline-devel",
+
+
+    # TODO: make a decision on this
+    # libcpuid is an optional dependency:
+    # on x86_64 it can be used to determine microarchitecture levels,
+    # but I couldn't find where nix really makes use of this, so there
+    # seemed to be very little benefit to porting an architecture dependent
+    # library to chimera just to include as an optional dependency of nix for
+    # one architecture.
+    #"libcpuid-devel", # not upstreamed
 ]
+# we don't actually use these atm as checks are disabled
 checkdepends = [
-    # unit-tests target (wip)
-    #"rapidcheck", not in cports yet
+    "rapidcheck",       # not upstreamed
+    "gtest-devel",
 ]
-options = [ "!check" ]
 pkgdesc = "Purely functional package manager"
 maintainer = "Mathijs Rietbergen <mathijs.rietbergen@proton.me>"
 license = "LGPL-2.1-or-later"
 url = "https://github.com/NixOS/nix"
 source = f"{url}/archive/refs/tags/{pkgver}.tar.gz"
 sha256 = "8d7af0d25371da32783f0b46bce8ff4f0d1dd996db6dee272faf306fcb8e2073"
-hardening = [ "!int" ] # without this, it constantly fails with illegal instructions
-
+# without `int` enabled, all nix tools constantly fail with "Illegal instruction".
+hardening = [ "!int" ]
+# Checks require network to download from nixpkgs, but network is not available
+# in check phase.
+options = [ "!check" ]
 
 def post_install(self):
     # remove installed systemd files
     self.uninstall("usr/lib/systemd/*/*", glob = True)
     self.uninstall("usr/lib/systemd")
-
 
 
 @subpackage("nix-devel")
