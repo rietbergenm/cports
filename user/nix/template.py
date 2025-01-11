@@ -69,13 +69,12 @@ makedepends = [
     #"libedit-readline-devel",
 
 
-    # TODO: make a decision on this
     # libcpuid is an optional dependency:
-    # on x86_64 it can be used to determine microarchitecture levels,
+    # On x86_64 it can be used to determine microarchitecture levels,
     # but I couldn't find where nix really makes use of this, so there
     # seemed to be very little benefit to porting an architecture dependent
     # library to chimera just to include as an optional dependency of nix for
-    # one architecture.
+    # only one architecture.
     #"libcpuid-devel", # not upstreamed
 ]
 # we don't actually use these atm as checks are disabled
