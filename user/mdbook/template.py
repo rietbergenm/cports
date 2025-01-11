@@ -1,0 +1,11 @@
+pkgname = "mdbook"
+pkgver = "0.4.43"
+pkgrel = 0
+build_style = "cargo"
+hostmakedepends = [ "cargo-auditable" ]
+pkgdesc = "Create book from markdown files. Like Gitbook but implemented in Rust."
+maintainer = "Mathijs Rietbergen <mathijs.rietbergen@proton.me>"
+license = "MPL-2.0"
+url = "https://rust-lang.github.io/mdBook"
+source = f"https://github.com/rust-lang/mdBook/archive/refs/tags/v{pkgver}.tar.gz"
+sha256 = "7213c006d78dafa0d7a893bdb8fd3814bbf4d6794ffb97822038185364b73f77"
