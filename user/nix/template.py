@@ -6,26 +6,29 @@ configure_args = [
     # Use /usr/lib instead of /usr/libexec
     "--libexecdir=/usr/lib",
 
+    # /nix/var is the default, but cbuild passes --localstatedir=/var.
+    # usually this is correct, but we need nix stuff to be in /nix/var.
+    "--localstatedir=/nix/var/",
+
     # profile-dir defaults to etc/profile.d which becomes
     # /usr/etc/profile.d with the prefix /usr. This is wrong,
     # we want these system files to go in /etc/profile.d.
     "-Dnix:profile-dir=/etc/profile.d",
 
+    # Use libedit instead of editline or readline (patches are included).
+    "-Dlibcmd:readline-flavor=libedit",
+
     # We need the below to fix "ERROR: clang does not know how to do prelinking."
     "-Ddefault_library=shared",
 
-    # The doc-gen target requires network to download from nixpkgs.
-    # We don't have network in the build phase, so we don't do it.
-    "-Ddoc-gen=false",
+    # We want man pages.
+    "-Ddoc-gen=true",
 
     # We don't need the perl bindings (and don't have the dependencies to build it).
     "-Dbindings=false",
 
     # We don't do test as it requires network, so don't build them.
     "-Dunit-tests=false",
-
-    # Use libedit instead of editline or readline.
-    "-Dlibcmd:readline-flavor=readline",
 ]
 hostmakedepends = [
     "meson",
@@ -35,11 +38,15 @@ hostmakedepends = [
     "pkgconf",
     "bash",
 
-    # These are needed for the doc-gen target,
-    # but we are currently not building that as
-    # it requires network.
-    #"doxygen",
-    #"mdbook", # not upstreamed
+    # These are needed for the doc-gen target.
+    "doxygen",
+    "mdbook", # not upstreamed
+    # Preprocessor for mdbook that checks for broken links
+    # The docs include a lot of things, but we only package the man pages.
+    # man pages don't support links, so we don't care if they are dead or not.
+    #"mdbook-linkcheck",
+    "rsync",
+    "jq",
 ]
 makedepends = [
     "boost-devel",
