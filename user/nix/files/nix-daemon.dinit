@@ -1,4 +1,4 @@
 type = process
-command = nix-daemon
+command = /usr/bin/nix-daemon
 depends-on = local.target
 log-type = buffer
