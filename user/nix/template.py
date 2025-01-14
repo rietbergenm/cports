@@ -113,11 +113,11 @@ def post_install(self):
 
 
     self.install_sysusers(self.files_path / "nix-daemon.sysusers.conf",
-                          name = "nix-daemon.conf")
+                          name = "nix-daemon")
     self.install_sysusers(self.files_path / "nix-users.sysusers.conf",
-                          name = "nix-users.conf")
+                          name = "nix-users")
     self.install_tmpfiles(self.files_path / "nix-daemon.tmpfiles.conf",
-                          name = "nix-daemon.conf")
+                          name = "nix-daemon")
     self.install_service(self.files_path / "nix-daemon.dinit",
                          name = "nix-daemon")
     self.install_file(self.files_path / "nix.conf", "etc/nix")
