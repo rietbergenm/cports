@@ -16,7 +16,11 @@ configure_args = [
     "-Dnix:profile-dir=/etc/profile.d",
 
     # Use libedit instead of editline or readline (patches are included).
-    "-Dlibcmd:readline-flavor=libedit",
+    #"-Dlibcmd:readline-flavor=libedit",
+
+    # for my personal preference, use editline for completion and history support
+    # this is not upstreamed in cports, but I have it in the local repo
+    "-Dlibcmd:readline-flavor=editline",
 
     # We need the below to fix "ERROR: clang does not know how to do prelinking."
     "-Ddefault_library=shared",
@@ -67,7 +71,10 @@ makedepends = [
     # use libedit from chimera, instead of editline or readline which
     # nix supports. It works, but tab completion and history in nix repl
     # don't work on both realine and libedit...
-    "libedit-devel",
+    #"libedit-devel",
+
+    # use editline as nix recommends
+    "editline-devel",
 
 
     # libcpuid is an optional dependency:
