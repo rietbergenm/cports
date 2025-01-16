@@ -5,7 +5,7 @@ if [ -z "$__NIX_SET_ENV_DONE" ]; then
 
 	DATA_PATH="${XDG_DATA_DIR-/usr/local/share:/usr/share}"
 
-	if [ "$USE_XDG_HOME_DIRS" == true ] ; then
+	if [ "$USE_XDG_BASE_DIRS" == true ] ; then
 		NIX_PREFIX="${XDG_STATE_HOME-$HOME/.local/state}/nix/profile"
 	else
 		NIX_PREFIX="$HOME/.nix-profile"
