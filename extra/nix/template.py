@@ -13,6 +13,8 @@ configure_args = [
     # profile-dir defaults to etc/profile.d which becomes
     # /usr/etc/profile.d with the prefix /usr. This is wrong,
     # we want these system files to go in /etc/profile.d.
+    # Note that we now remove them anyways, because we have our own,
+    # but it still felt cleaner to leave it like this.
     "-Dnix:profile-dir=/etc/profile.d",
 
     # Use libedit instead of editline or readline (patches are included).
@@ -22,7 +24,8 @@ configure_args = [
     # this is not upstreamed in cports, but I have it in the local repo
     "-Dlibcmd:readline-flavor=editline",
 
-    # We need the below to fix "ERROR: clang does not know how to do prelinking."
+    # We need the below to fix "ERROR: clang does not know how to do prelinking.",
+    # a.k.a. nix only supports shared libraries.
     "-Ddefault_library=shared",
 
     # We want man pages.
@@ -103,16 +106,17 @@ hardening = [ "!int" ]
 options = [ "!check" ]
 
 def post_install(self):
-    # Remove installed systemd files.
-    self.uninstall("usr/lib/systemd/*/*", glob = True)
+    # Remove systemd files.
     self.uninstall("usr/lib/systemd")
 
-    # We have our own, so we don't use these.
-    self.uninstall("etc/profile.d/*", glob = True)
+    # Creating /nix/var/nix/daemon-socket/socket is unneeded as nix-daemon can
+    # do it on its own, but the systemd unit files require the socket to be
+    # present before starting (why? I have no clue).
+    # That is why it exists upstream. We don't need this by any means.
+    self.uninstall("usr/lib/tmpfiles.d")
 
-    # These days, nix-daemon creates missing directories when it needs them
-    # so we don't need to create them via sd-tmpfiles.
-    self.uninstall("usr/lib/tmpfiles.d/*", glob = True)
+    # We have our own, so we don't use these.
+    self.uninstall("etc/profile.d")
 
     # Install the files that set up the environment, service and config.
     self.install_sysusers(self.files_path / "nix-daemon.sysusers.conf", name = "nix-daemon")
