@@ -103,26 +103,24 @@ hardening = [ "!int" ]
 options = [ "!check" ]
 
 def post_install(self):
-    # remove installed systemd files
+    # Remove installed systemd files.
     self.uninstall("usr/lib/systemd/*/*", glob = True)
     self.uninstall("usr/lib/systemd")
 
-    # we have our own, so we don't use these
-    self.uninstall("usr/lib/tmpfiles.d/*", glob = True)
+    # We have our own, so we don't use these.
     self.uninstall("etc/profile.d/*", glob = True)
 
+    # These days, nix-daemon creates missing directories when it needs them
+    # so we don't need to create them via sd-tmpfiles.
+    self.uninstall("usr/lib/tmpfiles.d/*", glob = True)
 
-    self.install_sysusers(self.files_path / "nix-daemon.sysusers.conf",
-                          name = "nix-daemon")
-    self.install_sysusers(self.files_path / "nix-users.sysusers.conf",
-                          name = "nix-users")
-    self.install_service(self.files_path / "nix-daemon.dinit",
-                         name = "nix-daemon")
+    # Install the files that set up the environment, service and config.
+    self.install_sysusers(self.files_path / "nix-daemon.sysusers.conf", name = "nix-daemon")
+    self.install_sysusers(self.files_path / "nix-users.sysusers.conf", name = "nix-users")
+    self.install_service(self.files_path / "nix-daemon.dinit", name = "nix-daemon")
     self.install_file(self.files_path / "nix.conf", "etc/nix")
-    self.install_file(self.files_path / "nix.defaults", "etc/default",
-                      name = "nix")
-    self.install_file(self.files_path / "nix.profile.d", "etc/profile.d",
-                      name = "nix.sh")
+    self.install_file(self.files_path / "nix.defaults", "etc/default", name = "nix")
+    self.install_file(self.files_path / "nix.profile.d", "etc/profile.d", name = "nix.sh")
 
 
 @subpackage("nix-devel")
