@@ -1,0 +1,6 @@
+# enable if use-xdg-base-dirs = true in /etc/nix/nix.conf
+USE_XDG_BASE_DIRS=false
+
+# whether to append or prepend nix directories to $PATH
+# When prepending, nix binaries get precedence over traditional tools.
+PREPEND=false
