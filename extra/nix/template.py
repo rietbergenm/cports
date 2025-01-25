@@ -1,5 +1,5 @@
 pkgname = "nix"
-pkgver = "2.25.3"
+pkgver = "2.26.1"
 pkgrel = 0
 build_style = "meson"
 configure_args = [
@@ -98,7 +98,7 @@ maintainer = "Mathijs Rietbergen <mathijs.rietbergen@proton.me>"
 license = "LGPL-2.1-or-later"
 url = "https://github.com/NixOS/nix"
 source = f"{url}/archive/refs/tags/{pkgver}.tar.gz"
-sha256 = "8d7af0d25371da32783f0b46bce8ff4f0d1dd996db6dee272faf306fcb8e2073"
+sha256 = "d1e9215fc133756d56cfcc9e70ca7630990ea07114f4eafe935ed9dbfd7fe5d8"
 # Without `int` enabled, all nix tools constantly fail with "Illegal instruction".
 hardening = [ "!int" ]
 # Checks require network to download from nixpkgs, but network is not available
