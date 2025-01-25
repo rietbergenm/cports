@@ -3,7 +3,6 @@ The project recommends using git submodules, but we want to use
 the libraries from chimera's repos, so we need to use the global
 include path.
 diff --git a/tests/test_comments.cpp b/tests/test_comments.cpp
-index c59a1b2..82b6cc6 100644
 --- a/tests/test_comments.cpp
 +++ b/tests/test_comments.cpp
 @@ -1,5 +1,5 @@
@@ -14,7 +13,6 @@ index c59a1b2..82b6cc6 100644
  #include <toml.hpp>
  
 diff --git a/tests/test_datetime.cpp b/tests/test_datetime.cpp
-index 69c58cd..1b03a92 100644
 --- a/tests/test_datetime.cpp
 +++ b/tests/test_datetime.cpp
 @@ -1,5 +1,5 @@
@@ -25,7 +23,6 @@ index 69c58cd..1b03a92 100644
  #include <toml11/datetime.hpp>
  
 diff --git a/tests/test_error_message.cpp b/tests/test_error_message.cpp
-index 567dc4a..acf8a20 100644
 --- a/tests/test_error_message.cpp
 +++ b/tests/test_error_message.cpp
 @@ -1,5 +1,5 @@
@@ -36,7 +33,6 @@ index 567dc4a..acf8a20 100644
  #include <toml.hpp>
  
 diff --git a/tests/test_find.cpp b/tests/test_find.cpp
-index 2228a60..9a4ddb2 100644
 --- a/tests/test_find.cpp
 +++ b/tests/test_find.cpp
 @@ -1,5 +1,5 @@
@@ -47,7 +43,6 @@ index 2228a60..9a4ddb2 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_find_or.cpp b/tests/test_find_or.cpp
-index 9b0725f..46c07e0 100644
 --- a/tests/test_find_or.cpp
 +++ b/tests/test_find_or.cpp
 @@ -1,5 +1,5 @@
@@ -58,7 +53,6 @@ index 9b0725f..46c07e0 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_format_floating.cpp b/tests/test_format_floating.cpp
-index 275bc53..e8c5ff8 100644
 --- a/tests/test_format_floating.cpp
 +++ b/tests/test_format_floating.cpp
 @@ -1,5 +1,5 @@
@@ -69,7 +63,6 @@ index 275bc53..e8c5ff8 100644
  #include <toml11/parser.hpp>
  #include <toml11/serializer.hpp>
 diff --git a/tests/test_format_integer.cpp b/tests/test_format_integer.cpp
-index a2b5b13..bc7b51a 100644
 --- a/tests/test_format_integer.cpp
 +++ b/tests/test_format_integer.cpp
 @@ -1,5 +1,5 @@
@@ -80,7 +73,6 @@ index a2b5b13..bc7b51a 100644
  #include <toml11/parser.hpp>
  #include <toml11/serializer.hpp>
 diff --git a/tests/test_format_table.cpp b/tests/test_format_table.cpp
-index b12b310..e7cdaa9 100644
 --- a/tests/test_format_table.cpp
 +++ b/tests/test_format_table.cpp
 @@ -1,5 +1,5 @@
@@ -91,7 +83,6 @@ index b12b310..e7cdaa9 100644
  #include <toml11/parser.hpp>
  #include <toml11/serializer.hpp>
 diff --git a/tests/test_get.cpp b/tests/test_get.cpp
-index 3c00d2d..f4b68d8 100644
 --- a/tests/test_get.cpp
 +++ b/tests/test_get.cpp
 @@ -1,5 +1,5 @@
@@ -102,7 +93,6 @@ index 3c00d2d..f4b68d8 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_get_or.cpp b/tests/test_get_or.cpp
-index 601ca03..f0c606d 100644
 --- a/tests/test_get_or.cpp
 +++ b/tests/test_get_or.cpp
 @@ -1,5 +1,5 @@
@@ -113,7 +103,6 @@ index 601ca03..f0c606d 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_literal.cpp b/tests/test_literal.cpp
-index 084e3bd..8f86181 100644
 --- a/tests/test_literal.cpp
 +++ b/tests/test_literal.cpp
 @@ -1,5 +1,5 @@
@@ -124,7 +113,6 @@ index 084e3bd..8f86181 100644
  #include <iostream>
  
 diff --git a/tests/test_location.cpp b/tests/test_location.cpp
-index 108de78..58bb20c 100644
 --- a/tests/test_location.cpp
 +++ b/tests/test_location.cpp
 @@ -1,5 +1,5 @@
@@ -134,8 +122,17 @@ index 108de78..58bb20c 100644
  
  #include <toml11/location.hpp>
  
+diff --git a/tests/test_parse.cpp b/tests/test_parse.cpp
+--- a/tests/test_parse.cpp
++++ b/tests/test_parse.cpp
+@@ -1,5 +1,5 @@
+ #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+-#include "doctest.h"
++#include <doctest/doctest.h>
+ 
+ #include <toml.hpp>
+ 
 diff --git a/tests/test_parse_array.cpp b/tests/test_parse_array.cpp
-index a367701..0a7e6bf 100644
 --- a/tests/test_parse_array.cpp
 +++ b/tests/test_parse_array.cpp
 @@ -5,7 +5,7 @@
@@ -148,7 +145,6 @@ index a367701..0a7e6bf 100644
  TEST_CASE("testing an array")
  {
 diff --git a/tests/test_parse_boolean.cpp b/tests/test_parse_boolean.cpp
-index 2a69cc3..c078ecf 100644
 --- a/tests/test_parse_boolean.cpp
 +++ b/tests/test_parse_boolean.cpp
 @@ -1,5 +1,5 @@
@@ -159,7 +155,6 @@ index 2a69cc3..c078ecf 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_parse_datetime.cpp b/tests/test_parse_datetime.cpp
-index f94b13b..099b1df 100644
 --- a/tests/test_parse_datetime.cpp
 +++ b/tests/test_parse_datetime.cpp
 @@ -1,5 +1,5 @@
@@ -170,7 +165,6 @@ index f94b13b..099b1df 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_parse_floating.cpp b/tests/test_parse_floating.cpp
-index f406a3c..fa3cff9 100644
 --- a/tests/test_parse_floating.cpp
 +++ b/tests/test_parse_floating.cpp
 @@ -1,5 +1,5 @@
@@ -181,7 +175,6 @@ index f406a3c..fa3cff9 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_parse_inline_table.cpp b/tests/test_parse_inline_table.cpp
-index 2378be0..8f42568 100644
 --- a/tests/test_parse_inline_table.cpp
 +++ b/tests/test_parse_inline_table.cpp
 @@ -5,7 +5,7 @@
@@ -194,7 +187,6 @@ index 2378be0..8f42568 100644
  TEST_CASE("testing an inline table v1.0")
  {
 diff --git a/tests/test_parse_integer.cpp b/tests/test_parse_integer.cpp
-index 2dbbfdd..d925f45 100644
 --- a/tests/test_parse_integer.cpp
 +++ b/tests/test_parse_integer.cpp
 @@ -1,6 +1,6 @@
@@ -206,7 +198,6 @@ index 2dbbfdd..d925f45 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_parse_null.cpp b/tests/test_parse_null.cpp
-index d9f12de..070c600 100644
 --- a/tests/test_parse_null.cpp
 +++ b/tests/test_parse_null.cpp
 @@ -1,5 +1,5 @@
@@ -217,7 +208,6 @@ index d9f12de..070c600 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_parse_string.cpp b/tests/test_parse_string.cpp
-index 9dac305..a8c8b2c 100644
 --- a/tests/test_parse_string.cpp
 +++ b/tests/test_parse_string.cpp
 @@ -1,5 +1,5 @@
@@ -228,7 +218,6 @@ index 9dac305..a8c8b2c 100644
  #include "utility.hpp"
  #include <iostream>
 diff --git a/tests/test_parse_table.cpp b/tests/test_parse_table.cpp
-index 112f32c..a6b7ae9 100644
 --- a/tests/test_parse_table.cpp
 +++ b/tests/test_parse_table.cpp
 @@ -5,7 +5,7 @@
@@ -241,7 +230,6 @@ index 112f32c..a6b7ae9 100644
  TEST_CASE("testing a table")
  {
 diff --git a/tests/test_parse_table_keys.cpp b/tests/test_parse_table_keys.cpp
-index d94a3c0..57589fe 100644
 --- a/tests/test_parse_table_keys.cpp
 +++ b/tests/test_parse_table_keys.cpp
 @@ -5,7 +5,7 @@
@@ -254,7 +242,6 @@ index d94a3c0..57589fe 100644
  TEST_CASE("testing table keys")
  {
 diff --git a/tests/test_result.cpp b/tests/test_result.cpp
-index 7737971..54e8f73 100644
 --- a/tests/test_result.cpp
 +++ b/tests/test_result.cpp
 @@ -1,5 +1,5 @@
@@ -265,7 +252,6 @@ index 7737971..54e8f73 100644
  #include <toml11/result.hpp>
  
 diff --git a/tests/test_scanner.cpp b/tests/test_scanner.cpp
-index c0ef738..556cff9 100644
 --- a/tests/test_scanner.cpp
 +++ b/tests/test_scanner.cpp
 @@ -1,5 +1,5 @@
@@ -276,7 +262,6 @@ index c0ef738..556cff9 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_serialize.cpp b/tests/test_serialize.cpp
-index 4f780a3..261b2e2 100644
 --- a/tests/test_serialize.cpp
 +++ b/tests/test_serialize.cpp
 @@ -1,5 +1,5 @@
@@ -287,7 +272,6 @@ index 4f780a3..261b2e2 100644
  #include <toml.hpp>
  
 diff --git a/tests/test_spec.cpp b/tests/test_spec.cpp
-index 00debdf..229ed0b 100644
 --- a/tests/test_spec.cpp
 +++ b/tests/test_spec.cpp
 @@ -1,5 +1,5 @@
@@ -298,7 +282,6 @@ index 00debdf..229ed0b 100644
  #include <toml11/spec.hpp>
  
 diff --git a/tests/test_storage.cpp b/tests/test_storage.cpp
-index 3305e1d..c97a50a 100644
 --- a/tests/test_storage.cpp
 +++ b/tests/test_storage.cpp
 @@ -1,5 +1,5 @@
@@ -309,7 +292,6 @@ index 3305e1d..c97a50a 100644
  #include <toml11/storage.hpp>
  
 diff --git a/tests/test_syntax_boolean.cpp b/tests/test_syntax_boolean.cpp
-index 42743b1..039fd45 100644
 --- a/tests/test_syntax_boolean.cpp
 +++ b/tests/test_syntax_boolean.cpp
 @@ -1,5 +1,5 @@
@@ -320,7 +302,6 @@ index 42743b1..039fd45 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_syntax_comment.cpp b/tests/test_syntax_comment.cpp
-index 449f32f..862b501 100644
 --- a/tests/test_syntax_comment.cpp
 +++ b/tests/test_syntax_comment.cpp
 @@ -1,5 +1,5 @@
@@ -331,7 +312,6 @@ index 449f32f..862b501 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_syntax_datetime.cpp b/tests/test_syntax_datetime.cpp
-index ad07d42..55eec9c 100644
 --- a/tests/test_syntax_datetime.cpp
 +++ b/tests/test_syntax_datetime.cpp
 @@ -1,5 +1,5 @@
@@ -342,7 +322,6 @@ index ad07d42..55eec9c 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_syntax_floating.cpp b/tests/test_syntax_floating.cpp
-index e73ea3a..eab2c0a 100644
 --- a/tests/test_syntax_floating.cpp
 +++ b/tests/test_syntax_floating.cpp
 @@ -1,5 +1,5 @@
@@ -353,7 +332,6 @@ index e73ea3a..eab2c0a 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_syntax_integer.cpp b/tests/test_syntax_integer.cpp
-index 9202b4d..273b5bf 100644
 --- a/tests/test_syntax_integer.cpp
 +++ b/tests/test_syntax_integer.cpp
 @@ -1,5 +1,5 @@
@@ -364,7 +342,6 @@ index 9202b4d..273b5bf 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_syntax_key.cpp b/tests/test_syntax_key.cpp
-index 15bc8f9..e970f6e 100644
 --- a/tests/test_syntax_key.cpp
 +++ b/tests/test_syntax_key.cpp
 @@ -1,5 +1,5 @@
@@ -375,7 +352,6 @@ index 15bc8f9..e970f6e 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_syntax_string.cpp b/tests/test_syntax_string.cpp
-index 8e41eed..b0a3d64 100644
 --- a/tests/test_syntax_string.cpp
 +++ b/tests/test_syntax_string.cpp
 @@ -1,5 +1,5 @@
@@ -386,7 +362,6 @@ index 8e41eed..b0a3d64 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_traits.cpp b/tests/test_traits.cpp
-index a4438e0..51d2d1e 100644
 --- a/tests/test_traits.cpp
 +++ b/tests/test_traits.cpp
 @@ -1,5 +1,5 @@
@@ -397,7 +372,6 @@ index a4438e0..51d2d1e 100644
  #include <toml11/types.hpp>
  
 diff --git a/tests/test_types.cpp b/tests/test_types.cpp
-index 82fb029..98f6917 100644
 --- a/tests/test_types.cpp
 +++ b/tests/test_types.cpp
 @@ -1,5 +1,5 @@
@@ -408,7 +382,6 @@ index 82fb029..98f6917 100644
  #include <toml11/types.hpp>
  
 diff --git a/tests/test_user_defined_conversion.cpp b/tests/test_user_defined_conversion.cpp
-index 2266f6d..fe0a977 100644
 --- a/tests/test_user_defined_conversion.cpp
 +++ b/tests/test_user_defined_conversion.cpp
 @@ -1,5 +1,5 @@
@@ -419,7 +392,6 @@ index 2266f6d..fe0a977 100644
  #include <toml.hpp>
  #include "utility.hpp"
 diff --git a/tests/test_utility.cpp b/tests/test_utility.cpp
-index d2ae5f9..3e83565 100644
 --- a/tests/test_utility.cpp
 +++ b/tests/test_utility.cpp
 @@ -1,5 +1,5 @@
@@ -430,7 +402,6 @@ index d2ae5f9..3e83565 100644
  #include <toml11/utility.hpp>
  
 diff --git a/tests/test_value.cpp b/tests/test_value.cpp
-index 5994e88..e534616 100644
 --- a/tests/test_value.cpp
 +++ b/tests/test_value.cpp
 @@ -1,5 +1,5 @@
@@ -441,7 +412,6 @@ index 5994e88..e534616 100644
  #include "utility.hpp"
  
 diff --git a/tests/test_visit.cpp b/tests/test_visit.cpp
-index fa98293..ba6d959 100644
 --- a/tests/test_visit.cpp
 +++ b/tests/test_visit.cpp
 @@ -1,5 +1,5 @@
@@ -452,7 +422,6 @@ index fa98293..ba6d959 100644
  #include <toml11/comments.hpp>
  #include <toml11/types.hpp>
 diff --git a/tests/utility.cpp b/tests/utility.cpp
-index 82589cc..1592e61 100644
 --- a/tests/utility.cpp
 +++ b/tests/utility.cpp
 @@ -1,4 +1,4 @@
@@ -462,7 +431,6 @@ index 82589cc..1592e61 100644
  #include "utility.hpp"
  
 diff --git a/tests/utility.hpp b/tests/utility.hpp
-index 06c05e9..81440a6 100644
 --- a/tests/utility.hpp
 +++ b/tests/utility.hpp
 @@ -9,7 +9,7 @@

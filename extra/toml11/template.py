@@ -1,5 +1,5 @@
 pkgname = "toml11"
-pkgver = "4.2.0"
+pkgver = "4.3.0"
 pkgrel = 0
 build_style = "cmake"
 configure_args = [
@@ -12,7 +12,7 @@ maintainer = "Mathijs Rietbergen <mathijs.rietbergen@proton.me>"
 license = "MIT"
 url = "https://github.com/ToruNiina/toml11"
 source = f"{url}/archive/v{pkgver}.tar.gz"
-sha256 = "9287971cd4a1a3992ef37e7b95a3972d1ae56410e7f8e3f300727ab1d6c79c2c"
+sha256 = "af95dab1bbb9b05a597e73d529a7269e13f1869e9ca9bd4779906c5cd96e282b"
 hardening = ["!int"]  # if enabled, test_parse_integer fails...
 
 
