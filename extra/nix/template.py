@@ -67,7 +67,7 @@ makedepends = [
     "sqlite-devel",
     "gc-devel",
     "lowdown-devel",
-    "libgit2-devel",    # should be newer that 1.9.0 (1.8.9 in upstream)
+    "libgit2-devel",
     "toml11",           # not upstreamed
 
 
@@ -99,7 +99,7 @@ license = "LGPL-2.1-or-later"
 url = "https://github.com/NixOS/nix"
 source = f"{url}/archive/refs/tags/{pkgver}.tar.gz"
 sha256 = "d1e9215fc133756d56cfcc9e70ca7630990ea07114f4eafe935ed9dbfd7fe5d8"
-# Without `int` enabled, all nix tools constantly fail with "Illegal instruction".
+# With `int` enabled, all nix tools constantly fail with "Illegal instruction".
 hardening = [ "!int" ]
 # Checks require network to download from nixpkgs, but network is not available
 # in check phase.
