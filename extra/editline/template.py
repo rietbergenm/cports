@@ -11,6 +11,8 @@ url = "https://troglobit.com/projects/editline"
 source = f"https://github.com/troglobit/editline/releases/download/{pkgver}/editline-{pkgver}.tar.xz"
 sha256 = "df223b3333a545fddbc67b49ded3d242c66fadf7a04beb3ada20957fcd1ffc0e"
 
+if self.profile().cross:
+    configure_args.append("--host=" + self.profile().triplet)
 
 def post_install(self):
     self.install_license("LICENSE")
