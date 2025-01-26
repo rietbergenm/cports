@@ -105,7 +105,9 @@ sha256 = "d1e9215fc133756d56cfcc9e70ca7630990ea07114f4eafe935ed9dbfd7fe5d8"
 hardening = [ "!int" ]
 # Checks require network to download from nixpkgs, but network is not available
 # in check phase.
-options = [ "!check" ]
+# Cross compiling fails as meson cannot find CMake when cross compiling.
+# (I think this is a cbuild issue)
+options = [ "!check", "!cross" ]
 
 def post_install(self):
     # Remove systemd files.
