@@ -6,7 +6,8 @@ configure_args = [
     "-DTOML11_BUILD_TESTS=ON",
     "-DTOML11_BUILD_TOML_TESTS=ON",
 ]
-hostmakedepends = ["cmake", "ninja", "doctest", "nlohmann-json"]
+hostmakedepends = ["cmake", "ninja"]
+makedepends = ["doctest", "nlohmann-json"]
 pkgdesc = "Feature-rich TOML language library for C++11/14/17/20"
 maintainer = "Mathijs Rietbergen <mathijs.rietbergen@proton.me>"
 license = "MIT"
