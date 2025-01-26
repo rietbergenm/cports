@@ -1,0 +1,15 @@
+# should only be invoked as zram-init@N where N is an integer
+type = scripted
+command = /usr/bin/zram-init -d $1
+# set the size to zero; disabling the zram device
+stop-command = /usr/bin/zram-init -d $1 0 
+
+# configure command line options to zram-init
+# in these files. They need to be present for 
+# this service to run. Each device gets its
+# own included file with options. They should
+# contain lines with "command += <argument>".
+@include /etc/dinit.d/zram-init.d/zram$1
+
+depends-on = early-fs-pre.target
+before = early-fs-fstab.target # allow fstab to use zram devices

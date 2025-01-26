@@ -1,0 +1,11 @@
+--- a/Makefile
++++ b/Makefile
+@@ -74,7 +74,7 @@ sbin/$(EXENAME): sbin/$(EXENAME).in
+ ifeq ($(MODIFY_SHEBANG), TRUE)
+ 	@echo 'Modifying shebang…'
+ 	sed -e "1s'"'^\#\!.*$$'"'$${SHEBANG:-#!`command -v sh 2>/dev/null`}'" \
+-		-i -- '$@'
++		-i .tmp '$@'
+ endif
+ 
+ .PHONY: install

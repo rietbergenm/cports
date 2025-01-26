@@ -1,0 +1,13 @@
+--- a/Makefile
++++ b/Makefile
+@@ -31,8 +31,8 @@ ZSH_COMPLETION ?= TRUE
+ SYSTEMD ?= TRUE
+ OPENRC ?= TRUE
+ 
+-INSTALL_EXE  ?= install -D --mode=755
+-INSTALL_DATA ?= install -D --mode=644
++INSTALL_EXE  ?= install -D -m 755
++INSTALL_DATA ?= install -D -m 644
+ RM           ?= rm -f
+ MSGFMT       ?= msgfmt --check --statistics --verbose
+ FXGETTEXT    ?= --no-wrap
