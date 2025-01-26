@@ -17,12 +17,14 @@ configure_args = [
     # but it still felt cleaner to leave it like this.
     "-Dnix:profile-dir=/etc/profile.d",
 
-    # Use libedit instead of editline or readline (patches are included).
-    #"-Dlibcmd:readline-flavor=libedit",
 
-    # for my personal preference, use editline for completion and history support
-    # this is not upstreamed in cports, but I have it in the local repo
+    # upstream nix prefers editline. Readline is an afterthought, so completion
+    # and history don't work with readline. As libedit has a readline compatible
+    # interface, history and completion won't work with libedit either. I did
+    # include patches to be able to use libedit instead of readline, but there
+    # will be missing functionality.
     "-Dlibcmd:readline-flavor=editline",
+    #"-Dlibcmd:readline-flavor=libedit",
 
     # We need the below to fix "ERROR: clang does not know how to do prelinking.",
     # a.k.a. nix only supports shared libraries.
