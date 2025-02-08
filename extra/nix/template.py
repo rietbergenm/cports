@@ -59,7 +59,7 @@ hostmakedepends = [
 ]
 makedepends = [
     "boost-devel",
-    "openssl-devel",
+    "openssl3-devel",
     "libarchive-devel",
     "libsodium-devel",
     "brotli-devel",
