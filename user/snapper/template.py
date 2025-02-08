@@ -19,20 +19,19 @@ hostmakedepends = [
     "gettext",
     "pkgconf",
     "slibtool",
-    "xsltproc",
+    "libxslt-progs",
 ]
 makedepends = [
     "acl-devel",
     "boost-devel",
+    "btrfs-progs-devel",
     "dbus-devel",
     "e2fsprogs-devel",
     "json-c-devel",
-    "libbtrfs-devel",
-    "libbtrfsutil-devel",
-    "libmount-devel",
     "libxml2-devel",
     "linux-pam-devel",
     "ncurses-libtinfo-devel",
+    "util-linux-mount-devel",
 ]
 pkgdesc = "Filesystem snapshot manager"
 maintainer = "Orphaned <orphaned@chimera-linux.org>"

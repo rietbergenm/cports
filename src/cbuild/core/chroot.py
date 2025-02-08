@@ -165,7 +165,7 @@ def setup_keys(rootp):
     for f in (paths.distdir() / "etc/apk/keys").glob("*.pub"):
         shutil.copy2(f, keydir)
 
-    for f in (paths.distdir() / "etc/keys").glob("*.pub"):
+    for f in paths.keys().glob("*.pub"):
         shutil.copy2(f, keydir)
 
     pkey = signi.get_keypath()
@@ -351,7 +351,7 @@ def _setup_dummy(rootp, archn):
 
     def _get_ver(pkgn):
         tobj = template.Template(
-            template.sanitize_pkgname(f"main/{pkgn}"),
+            f"main/{pkgn}",
             archn,
             True,
             False,

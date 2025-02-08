@@ -1,13 +1,13 @@
 pkgname = "easyeffects"
 pkgver = "7.2.3"
-pkgrel = 1
+pkgrel = 2
 build_style = "meson"
 configure_args = ["-Denable-libcpp-workarounds=true"]
 hostmakedepends = [
     "desktop-file-utils",
     "gettext",
     "glib-devel",
-    "gtk-update-icon-cache",
+    "gtk+3-update-icon-cache",
     "itstool",
     "meson",
     "pkgconf",

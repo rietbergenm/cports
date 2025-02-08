@@ -19,7 +19,7 @@ hostmakedepends = [
     "gtk-doc-tools",
     "libtool",
     "pkgconf",
-    "xsltproc",
+    "libxslt-progs",
 ]
 makedepends = [
     "e2fsprogs-devel",
@@ -29,11 +29,11 @@ makedepends = [
     "curl-devel",
     "libgpg-error-devel",
     "linux-headers",
-    "openssl-devel",
+    "openssl3-devel",
     "xz-devel",
     "libarchive-devel",
 ]
-checkdepends = ["attr-progs", "bsdtar", "gnupg", "xz"]
+checkdepends = ["attr-progs", "libarchive-progs", "gnupg", "xz"]
 pkgdesc = "Operating system and container binary deployment and upgrades"
 maintainer = "eater <=@eater.me>"
 license = "LGPL-2.0-or-later"

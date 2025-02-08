@@ -1,6 +1,6 @@
 pkgname = "gocryptfs"
-pkgver = "2.5.0"
-pkgrel = 1
+pkgver = "2.5.1"
+pkgrel = 0
 build_style = "go"
 make_build_args = [
     "-ldflags="
@@ -9,16 +9,9 @@ make_build_args = [
     ".",
     "./gocryptfs-xray",
 ]
-hostmakedepends = [
-    "go",
-    "pkgconf",
-]
-makedepends = [
-    "openssl-devel",
-]
-depends = [
-    "fuse",
-]
+hostmakedepends = ["go", "pkgconf"]
+makedepends = ["openssl3-devel"]
+depends = ["fuse"]
 pkgdesc = "Encrypted overlay filesystem"
 maintainer = "Nasado <hi@nasado.name>"
 license = "MIT"
@@ -26,7 +19,7 @@ url = "https://github.com/rfjakob/gocryptfs"
 source = (
     f"{url}/releases/download/v{pkgver}/gocryptfs_v{pkgver}_src-deps.tar.gz"
 )
-sha256 = "eed73d59a3f5019ec5ce6a2026cbff95789c2280308781bfa7da4aaf84126a67"
+sha256 = "80c3771c9f7e65af9326b107ddb7a30e9c3c7bf8823412b9615b7f77352cdde7"
 # requires fuse kernel module
 options = ["!check"]
 
@@ -35,12 +28,3 @@ def post_install(self):
     self.install_man("Documentation/gocryptfs.1")
     self.install_man("Documentation/gocryptfs-xray.1")
     self.install_license("LICENSE")
-
-
-@subpackage("plasma-vault-gocryptfs")
-def _(self):
-    self.subdesc = "plasma-vault backend"
-    self.provides = [self.with_pkgver("plasma-vault-backend")]
-    self.options = ["empty"]
-
-    return []

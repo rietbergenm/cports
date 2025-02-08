@@ -1,7 +1,7 @@
 pkgname = "clang-rt-crt-cross"
 _musl_ver = "1.2.5"
 pkgver = "19.1.7"
-pkgrel = 0
+pkgrel = 1
 build_style = "cmake"
 configure_args = [
     "-DCMAKE_BUILD_TYPE=Release",
@@ -37,7 +37,7 @@ hostmakedepends = [
     "llvm-devel",
     "python",
 ]
-makedepends = ["zlib-ng-compat-devel", "libffi-devel"]
+makedepends = ["zlib-ng-compat-devel", "libffi8-devel"]
 depends = []
 pkgdesc = "Core cross-compiling runtime for LLVM"
 maintainer = "q66 <q66@chimera-linux.org>"
@@ -71,6 +71,7 @@ _targetlist = [
     "ppc",
     "x86_64",
     "riscv64",
+    "loongarch64",
 ]
 _targets = sorted(filter(lambda p: p != self.profile().arch, _targetlist))
 

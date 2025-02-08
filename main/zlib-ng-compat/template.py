@@ -2,13 +2,14 @@ pkgname = "zlib-ng-compat"
 pkgver = "2.2.3"
 # compat version
 _cver = "1.3.1"
-pkgrel = 0
+pkgrel = 2
 build_style = "configure"
 configure_args = [
     "--prefix=/usr",
     "--shared",
     "--zlib-compat",
 ]
+configure_env = {}
 hostmakedepends = ["pkgconf"]
 # we need to explicitly provide higher ver or apk won't upgrade it,
 # even with provider_priority set which is strange but it is how it is
@@ -28,6 +29,9 @@ compression = "deflate"
 # sigh, carried over from zlib's old buildsystem
 options = ["bootstrap", "linkundefver"]
 
+if self.profile().cross:
+    configure_env["CHOST"] = self.profile().triplet
+
 
 @subpackage("zlib-ng-compat-devel-static")
 def _(self):
@@ -43,12 +47,3 @@ def _(self):
     self.replaces = [f"zlib-devel<{_cver}-r99"]
 
     return self.default_devel()
-
-
-@subpackage("zlib-dbg")
-def _(self):
-    self.subdesc = "transitional debug package"
-    # prevent cbuild from thinking it's a depcycle
-    self.depends = [f"virtual:zlib-ng-compat-dbg={self.full_pkgver}!base-files"]
-    self.options = ["empty"]
-    return []

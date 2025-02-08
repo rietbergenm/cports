@@ -6,12 +6,12 @@ build_style = "gnu_configure"
 configure_gen = []
 make_dir = "."
 make_install_args = ["install-docs", "DOC_TARGETS=chunks"]
-hostmakedepends = ["perl", "pkgconf", "xsltproc"]
+hostmakedepends = ["perl", "pkgconf", "libxslt-progs"]
 makedepends = [
     "glu-devel",
     "linux-headers",
     "ncurses-devel",
-    "openssl-devel",
+    "openssl3-devel",
     "unixodbc-devel",
     "wxwidgets-devel",
     "zlib-ng-compat-devel",

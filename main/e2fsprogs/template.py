@@ -1,6 +1,6 @@
 pkgname = "e2fsprogs"
 pkgver = "1.47.2"
-pkgrel = 0
+pkgrel = 1
 build_style = "gnu_configure"
 configure_args = [
     "--enable-elf-shlibs",
@@ -24,10 +24,10 @@ make_install_args = ["-j1", "install-libs"]
 hostmakedepends = ["pkgconf", "texinfo"]
 makedepends = [
     "fuse-devel",
-    "libblkid-devel",
-    "libuuid-devel",
     "linux-headers",
     "udev-devel",
+    "util-linux-blkid-devel",
+    "util-linux-uuid-devel",
 ]
 checkdepends = ["bzip2", "perl"]
 pkgdesc = "Ext2/3/4 file system utilities"
@@ -74,10 +74,12 @@ def _(self):
     return self.default_libs()
 
 
-@subpackage("fuse2fs")
+@subpackage("e2fsprogs-fuse")
 def _(self):
     self.pkgdesc = "Ext2/3/4 FUSE driver"
     self.depends += ["fuse"]
+    # transitional
+    self.provides = [self.with_pkgver("fuse2fs")]
 
     return [
         "usr/bin/fuse2fs",

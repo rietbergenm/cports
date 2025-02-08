@@ -1,6 +1,6 @@
 pkgname = "imagemagick"
 pkgver = "7.1.1.43"
-pkgrel = 0
+pkgrel = 1
 build_style = "gnu_configure"
 configure_args = [
     "--disable-static",
@@ -46,14 +46,14 @@ makedepends = [
     "fftw-devel",
     "fontconfig-devel",
     "freetype-devel",
+    "ghostscript-devel",
     "graphviz-devel",
     "jbigkit-devel",
     "lcms2-devel",
-    "libgs-devel",
     "libheif-devel",
     "libjpeg-turbo-devel",
     "libjxl-devel",
-    "libltdl-devel",
+    "libtool-devel",
     "libpng-devel",
     "libpng-devel",
     "libraw-devel",
@@ -88,9 +88,10 @@ def post_install(self):
     self.install_license("LICENSE")
 
 
-@subpackage("libmagick")
+@subpackage("imagemagick-libs")
 def _(self):
-    self.pkgdesc = "ImageMagick library"
+    # transitional
+    self.provides = [self.with_pkgver("libmagick")]
 
     return [
         "usr/lib/libMagick*.so.*",
@@ -99,17 +100,22 @@ def _(self):
     ]
 
 
-@subpackage("libmagick-perl")
+@subpackage("imagemagick-perl")
 def _(self):
+    # transitional
+    self.provides = [self.with_pkgver("libmagick-perl")]
+
     return [
         "usr/lib/perl5",
         "usr/share/man/man3/Image::Magick*",
     ]
 
 
-@subpackage("libmagick-devel")
+@subpackage("imagemagick-devel")
 def _(self):
     # buildsystem is stupid and does not emit deps
     self.depends += makedepends
+    # transitional
+    self.provides = [self.with_pkgver("libmagick-devel")]
 
     return self.default_devel()

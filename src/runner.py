@@ -44,6 +44,7 @@ opt_bldroot = "bldroot"
 opt_blddir = ""
 opt_pkgpath = "packages"
 opt_srcpath = "sources"
+opt_keypath = None
 opt_cchpath = "cbuild_cache"
 opt_stagepath = "pkgstage"
 opt_statusfd = None
@@ -115,6 +116,7 @@ def handle_options():
     global opt_checkfail, opt_stage, opt_altrepo, opt_stagepath, opt_bldroot
     global opt_blddir, opt_pkgpath, opt_srcpath, opt_cchpath, opt_updatecheck
     global opt_acceptsum, opt_comp, opt_maint, opt_epkgs, opt_tdata, opt_nolock
+    global opt_keypath
 
     # respect NO_COLOR
     opt_nocolor = ("NO_COLOR" in os.environ) or not sys.stdout.isatty()
@@ -220,6 +222,9 @@ def handle_options():
     )
     parser.add_argument(
         "-s", "--sources-path", default=None, help="Sources storage path."
+    )
+    parser.add_argument(
+        "-k", "--keys-path", default=None, help="Additional keys path."
     )
     parser.add_argument(
         "-t",
@@ -383,6 +388,7 @@ def handle_options():
         signcfg = global_cfg["signing"]
 
         opt_signkey = signcfg.get("key", fallback=opt_signkey)
+        opt_keypath = signcfg.get("keys", fallback=opt_keypath)
 
     if "data" in global_cfg:
         opt_tdata = dict(global_cfg["data"])
@@ -431,8 +437,14 @@ def handle_options():
     if cmdline.sources_path:
         opt_srcpath = cmdline.sources_path
 
+    if cmdline.keys_path:
+        opt_keypath = cmdline.keys_path
+
     if cmdline.no_remote:
         opt_nonet = True
+
+    if cmdline.no_lock:
+        opt_nolock = True
 
     if cmdline.dirty_build:
         opt_dirty = True
@@ -524,6 +536,16 @@ def init_late():
 
     # register signing key
     sign.register_key(opt_signkey)
+
+    if opt_keypath:
+        paths.init_keys(opt_keypath)
+    else:
+        kp = sign.get_keypath()
+        if kp:
+            paths.init_keys(kp.parent)
+        else:
+            # fallback
+            paths.init_keys("etc/keys")
 
     # set compression type
     autil.set_compression(opt_comp)
@@ -715,7 +737,7 @@ def bootstrap(tgt):
         rp = None
         try:
             rp = template.Template(
-                template.sanitize_pkgname("main/base-cbuild"),
+                "main/base-cbuild",
                 None,
                 False,
                 False,
@@ -838,7 +860,7 @@ def do_clean(tgt):
     ctmpl = cmdline.command[1] if len(cmdline.command) >= 2 else None
     if ctmpl:
         tmpl = template.Template(
-            template.sanitize_pkgname(ctmpl),
+            ctmpl,
             chroot.host_cpu(),
             True,
             False,
@@ -1057,7 +1079,7 @@ def do_lint(tgt):
     # just read it and do nothing else
     # don't let the skip logic kick in
     template.Template(
-        template.sanitize_pkgname(pkgn),
+        pkgn,
         opt_arch if opt_arch else chroot.host_cpu(),
         True,
         False,
@@ -1132,7 +1154,7 @@ def _graph_prepare():
             return rtmpls[pkgn]
         try:
             tp = template.Template(
-                template.sanitize_pkgname(pkgn),
+                pkgn,
                 chroot.host_cpu(),
                 True,
                 False,
@@ -1174,7 +1196,7 @@ def do_prune_sources(tgt):
     def _read_pkg(pkgn):
         try:
             tp = template.Template(
-                template.sanitize_pkgname(pkgn),
+                pkgn,
                 chroot.host_cpu(),
                 True,
                 False,
@@ -1262,7 +1284,7 @@ def do_relink_subpkgs(tgt):
     def _read_pkg(pkgn):
         try:
             tp = template.Template(
-                template.sanitize_pkgname(pkgn),
+                pkgn,
                 chroot.host_cpu(),
                 True,
                 False,
@@ -1371,7 +1393,7 @@ def do_print_build_graph(tgt):
             return rtmpls[pkgn]
         try:
             tp = template.Template(
-                template.sanitize_pkgname(pkgn),
+                pkgn,
                 opt_arch or chroot.host_cpu(),
                 True,
                 False,
@@ -1462,7 +1484,7 @@ def _get_unbuilt(outdated=False):
 
     for pn in tmpls:
         tmpl = template.Template(
-            template.sanitize_pkgname(pn),
+            pn,
             tarch,
             True,
             False,
@@ -1590,7 +1612,7 @@ def do_update_check(tgt):
         nonlocal namelen, verlen
 
         tmpl = template.Template(
-            template.sanitize_pkgname(pkgn),
+            pkgn,
             chroot.host_cpu(),
             True,
             False,
@@ -1694,7 +1716,7 @@ def do_dump(tgt):
     def _read_pkg(pkgn):
         try:
             return template.Template(
-                template.sanitize_pkgname(pkgn),
+                pkgn,
                 opt_arch if opt_arch else chroot.host_cpu(),
                 True,
                 False,
@@ -1714,6 +1736,36 @@ def do_dump(tgt):
         dumps.append(pkgr.dump())
 
     print(json.dumps(dumps, indent=4))
+
+
+def do_print_mismatched(tgt):
+    from cbuild.core import chroot, template, errors
+
+    tmpls = _collect_tmpls(None)
+
+    def _read_pkg(pkgn):
+        try:
+            return template.Template(
+                pkgn,
+                opt_arch if opt_arch else chroot.host_cpu(),
+                True,
+                False,
+                (1, 1),
+                False,
+                False,
+                None,
+                target="lint",
+            )
+        except errors.PackageException:
+            return None
+
+    for tmpln in tmpls:
+        pkgr = _read_pkg(tmpln)
+        for spkg in pkgr.subpkg_list:
+            if spkg.pkgname.endswith("-default"):
+                continue
+            if not spkg.pkgname.startswith(f"{pkgr.pkgname}-"):
+                print(f"{pkgr.pkgname} -> {spkg.pkgname}")
 
 
 def do_pkg(tgt, pkgn=None, force=None, check=None, stage=None):
@@ -1744,7 +1796,7 @@ def do_pkg(tgt, pkgn=None, force=None, check=None, stage=None):
             pkgn = cmdline.command[1]
     rp = (
         template.Template(
-            template.sanitize_pkgname(pkgn),
+            pkgn,
             opt_arch if opt_arch else chroot.host_cpu(),
             force,
             check,
@@ -1907,7 +1959,7 @@ def _bulkpkg(pkgs, statusf, do_build, do_raw):
             cbvisit,
             lambda d: _do_with_exc(
                 lambda: template.Template(
-                    template.sanitize_pkgname(d),
+                    d,
                     tarch,
                     True,
                     False,
@@ -1925,7 +1977,7 @@ def _bulkpkg(pkgs, statusf, do_build, do_raw):
     handle_recdeps(
         "main/base-cbuild",
         template.Template(
-            template.sanitize_pkgname("main/base-cbuild"),
+            "main/base-cbuild",
             tarch,
             True,
             False,
@@ -1957,7 +2009,7 @@ def _bulkpkg(pkgs, statusf, do_build, do_raw):
         failed = False
         tp = _do_with_exc(
             lambda: template.Template(
-                template.sanitize_pkgname(pn),
+                pn,
                 tarch,
                 opt_force,
                 opt_check,
@@ -2238,7 +2290,7 @@ def do_prepare_upgrade(tgt):
     chroot.chroot_check()
 
     tmpl = template.Template(
-        template.sanitize_pkgname(pkgn),
+        pkgn,
         opt_arch if opt_arch else chroot.host_cpu(),
         True,
         False,
@@ -2316,7 +2368,7 @@ def do_bump_pkgver(tgt):
 
     try:
         tmpl = template.Template(
-            template.sanitize_pkgname(pkgn),
+            pkgn,
             chroot.host_cpu(),
             True,
             False,
@@ -2356,7 +2408,7 @@ def do_bump_pkgrel(tgt):
     for pkgn in cmdline.command[1:]:
         try:
             tmpl = template.Template(
-                template.sanitize_pkgname(pkgn),
+                pkgn,
                 chroot.host_cpu(),
                 True,
                 False,
@@ -2689,6 +2741,10 @@ command_handlers = {
     "print-build-graph": (
         do_print_build_graph,
         "Print the build graph of a template",
+    ),
+    "print-mismatched-subpkgs": (
+        do_print_mismatched,
+        "Print subpackages that have wrong names",
     ),
     "print-outdated": (
         lambda cmd: do_print_unbuilt(cmd, False, True),

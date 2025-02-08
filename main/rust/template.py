@@ -1,11 +1,11 @@
 pkgname = "rust"
 pkgver = "1.84.0"
-pkgrel = 0
+pkgrel = 1
 hostmakedepends = [
     "cargo-bootstrap",
     "cmake",
     "curl",
-    "libffi-devel",
+    "libffi8-devel",
     "libxml2-devel",
     "llvm-devel",
     "llvm-tools",
@@ -17,7 +17,7 @@ hostmakedepends = [
     "zstd-devel",
 ]
 makedepends = [
-    "libffi-devel",
+    "libffi8-devel",
     "libxml2-devel",
     "llvm-devel",
     "ncurses-devel",
@@ -448,10 +448,11 @@ def _(self):
     ]
 
 
-@subpackage("rustfmt")
+@subpackage("rust-rustfmt")
 def _(self):
     self.pkgdesc = "Rust code formatter"
     self.depends = [self.parent]
+    self.provides = [self.with_pkgver("rustfmt")]
 
     return [
         "usr/bin/rustfmt",

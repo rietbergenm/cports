@@ -1,6 +1,6 @@
 pkgname = "opencv"
 pkgver = "4.11.0"
-pkgrel = 1
+pkgrel = 3
 build_style = "cmake"
 configure_args = [
     # rm NDEBUG
@@ -42,7 +42,7 @@ hostmakedepends = [
     "cmake",
     "ninja",
     "pkgconf",
-    "protoc",
+    "protobuf-protoc",
     "python-devel",
     "python-numpy",
 ]
@@ -194,10 +194,12 @@ def _(self):
     return self.default_progs()
 
 
-@subpackage("python-opencv")
+@subpackage("opencv-python")
 def _(self):
     self.subdesc = "python module"
     self.depends += ["python-numpy"]
+    # transitional
+    self.provides = [self.with_pkgver("python-opencv")]
 
     return ["usr/lib/python*"]
 

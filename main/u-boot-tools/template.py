@@ -19,12 +19,12 @@ hostmakedepends = [
     "python-setuptools",
 ]
 makedepends = [
-    "openssl-devel",
+    "openssl3-devel",
     "linux-headers",
-    "libuuid-devel",
     "gnutls-devel",
     "ncurses-libtinfo-devel",
     "python-devel",
+    "util-linux-uuid-devel",
 ]
 pkgdesc = "Das U-Boot tools"
 maintainer = "q66 <q66@chimera-linux.org>"

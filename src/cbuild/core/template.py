@@ -727,6 +727,9 @@ class Template(Package):
         for fl, dval, tp, mand, sp, inh in core_fields:
             setattr(self, fl, copy_of_dval(dval))
 
+        if isinstance(tmplp, str):
+            tmplp = sanitize_pkgname(tmplp)
+
         # make this available early
         self.pkgname = tmplp.name
         self.repository = tmplp.parent.name
@@ -800,7 +803,7 @@ class Template(Package):
         def subpkg_deco(spkgname, cond=True, alternative=None):
             def deco(f):
                 if alternative:
-                    pn = f"{alternative}-{spkgname}-default"
+                    pn = f"{alternative.removeprefix('!')}-{spkgname}-default"
                 else:
                     pn = spkgname
                 if f.__name__ != "_":
@@ -988,7 +991,9 @@ class Template(Package):
         # link subpackages and fill in their fields
         for spn, spf, spa in self.subpackages:
             if spa:
-                spn = f"{spa}-{spn}-default"
+                spn = f"{spa.removeprefix('!')}-{spn}-default"
+                if spa.startswith("!"):
+                    spa = None
             if spn in spdupes:
                 self.error(f"subpackage '{spn}' already exists")
             if spn.lower() != spn:
@@ -2412,7 +2417,7 @@ class Subpackage(Package):
                             # we want pycaches to soft-pull the right python,
                             # in order for them to affect staging (leave no
                             # outdated pycache behind)
-                            ddeps.append(f"base-python{pyver}~{pyver}")
+                            ddeps.append(f"python-python{pyver}-meta~{pyver}")
                     elif not instif.startswith("base-"):
                         ddeps.append(instif)
                     self.install_if = [fbdep, instif]
@@ -2657,35 +2662,6 @@ def sanitize_pkgname(pkgname, error=True):
     tmplpath = paths.distdir() / pkgname / "template.py"
     if not tmplpath.is_file():
         if not error:
-            return None
-        raise errors.CbuildException(f"missing template for '{pkgname}'")
-    return tmplpath.resolve().parent
-
-
-def resolve_pkgname(pkgname, resolve, ignore_missing):
-    tmplpath = None
-    for r in resolve.source_repositories:
-        tmplpath = paths.distdir() / r / pkgname / "template.py"
-        if tmplpath.is_file():
-            break
-        else:
-            tmplpath = None
-    if not tmplpath:
-        altname = None
-        for apkg, adesc, iif, takef in autopkgs:
-            if pkgname.endswith(f"-{apkg}"):
-                altname = pkgname.removesuffix(f"-{apkg}")
-                break
-        if altname:
-            for r in resolve.source_repositories:
-                rpath = paths.distdir() / r
-                tmplpath = rpath / altname / "template.py"
-                if tmplpath.is_file():
-                    break
-                else:
-                    tmplpath = None
-    if not tmplpath:
-        if ignore_missing:
             return None
         raise errors.CbuildException(f"missing template for '{pkgname}'")
     return tmplpath.resolve().parent

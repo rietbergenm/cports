@@ -1,6 +1,6 @@
 pkgname = "sdl3"
-pkgver = "3.2.0"
-pkgrel = 2
+pkgver = "3.2.2"
+pkgrel = 0
 build_style = "cmake"
 configure_args = [
     "-DCMAKE_BUILD_TYPE=Release",
@@ -42,15 +42,15 @@ makedepends = [
 ]
 depends = [
     # dynamically loaded
-    "so:libGLESv2.so.2!libgles2",
-    "so:libGL.so.1!libgl",
+    "so:libGLESv2.so.2!mesa-gles2-libs",
+    "so:libGL.so.1!mesa-gl-libs",
 ]
 pkgdesc = "Simple DirectMedia Layer version 3"
 maintainer = "Erica Z <zerica@callcc.eu>"
 license = "Zlib"
 url = "https://libsdl.org"
 source = f"https://github.com/libsdl-org/SDL/releases/download/release-{pkgver}/SDL3-{pkgver}.zip"
-sha256 = "abe7114fa42edcc8097856787fa5d37f256d97e365b71368b60764fe7c10e4f8"
+sha256 = "58d8adc7068d38923f918e0bdaa9c4948f93d9ba204fe4de8cc6eaaf77ad6f82"
 
 
 def post_install(self):

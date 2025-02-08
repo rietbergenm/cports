@@ -17,11 +17,11 @@ makedepends = [
     "libbsd-devel",
     "libevent-devel",
     "libretls-devel",
-    "libuuid-devel",
     "linux-headers",
     "musl-devel",
     "ncurses-devel",
-    "openssl-devel",
+    "openssl3-devel",
+    "util-linux-uuid-devel",
     "zlib-ng-compat-devel",
 ]
 checkdepends = ["git"]

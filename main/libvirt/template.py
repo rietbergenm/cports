@@ -39,18 +39,17 @@ hostmakedepends = [
     "libxml2-progs",
     "lvm2",  # buildtime check
     "meson",
-    "mkfs",  # buildtime check
-    "mount",  # buildtime check
     "perl",
     "pkgconf",
     "python-docutils",
-    "xsltproc",
+    "util-linux-mkfs",  # buildtime check
+    "util-linux-mount",  # buildtime check
+    "libxslt-progs",
 ]
 makedepends = [
     "acl-devel",
     "attr-devel",
     "bash-completion",
-    "device-mapper-devel",
     "fuse-devel",
     "glib-devel",
     "gnutls-devel",
@@ -59,7 +58,6 @@ makedepends = [
     "curl-devel",
     "libiscsi-devel",
     "libnl-devel",
-    "libnuma-devel",
     "libpcap-devel",
     "libpciaccess-devel",
     "libsasl-devel",
@@ -68,6 +66,8 @@ makedepends = [
     "libtirpc-devel",
     "libxml2-devel",
     "linux-headers",
+    "lvm2-devel",
+    "numactl-devel",
     "parted-devel",
     "polkit-devel",
     "readline-devel",

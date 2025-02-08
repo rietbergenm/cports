@@ -13,9 +13,33 @@ def _srcpkg_ver(pkgn, pkgb):
     if pkgn in _tcache:
         return _tcache[pkgn]
 
-    pkgp = template.resolve_pkgname(pkgn, pkgb, True)
-    if not pkgp:
-        return None
+    tmplpath = None
+    for r in pkgb.source_repositories:
+        tmplpath = paths.distdir() / r / pkgn / "template.py"
+        if tmplpath.is_file():
+            break
+        else:
+            tmplpath = None
+
+    if not tmplpath:
+        altname = None
+        for apkg, adesc, iif, takef in template.autopkgs:
+            if pkgn.endswith(f"-{apkg}"):
+                altname = pkgn.removesuffix(f"-{apkg}")
+                break
+        if altname:
+            for r in pkgb.source_repositories:
+                rpath = paths.distdir() / r
+                tmplpath = rpath / altname / "template.py"
+                if tmplpath.is_file():
+                    break
+                else:
+                    tmplpath = None
+
+    if not tmplpath:
+        return None, None
+
+    pkgp = tmplpath.resolve().parent
 
     tmplv = template.Template(
         pkgp,
@@ -31,17 +55,17 @@ def _srcpkg_ver(pkgn, pkgb):
 
     modv = tmplv._raw_mod
     if not hasattr(modv, "pkgver") or not hasattr(modv, "pkgrel"):
-        return None
+        return None, tmplv.full_pkgname
 
     pver = getattr(modv, "pkgver")
     prel = getattr(modv, "pkgrel")
     if pver is None or prel is None:
-        return None
+        return None, tmplv.full_pkgname
 
     cv = f"{pver}-r{prel}"
-    _tcache[pkgn] = cv
+    _tcache[pkgn] = (cv, tmplv.full_pkgname)
 
-    return cv
+    return cv, tmplv.full_pkgname
 
 
 def _is_rdep(pn):
@@ -112,21 +136,21 @@ def setup_depends(pkg, only_names=False):
 
     if pkg.stage > 0 and not only_names:
         for dep in pkg.hostmakedepends + cdeps:
-            sver = _srcpkg_ver(dep, pkg)
+            sver, sfull = _srcpkg_ver(dep, pkg)
             if not sver:
-                hdeps.append((None, dep))
+                hdeps.append((None, dep, sfull))
                 continue
-            hdeps.append((sver, dep))
+            hdeps.append((sver, dep, sfull))
     elif only_names:
         hdeps = pkg.hostmakedepends + cdeps
 
     if not only_names:
         for dep in pkg.makedepends:
-            sver = _srcpkg_ver(dep, pkg)
+            sver, sfull = _srcpkg_ver(dep, pkg)
             if not sver:
-                tdeps.append((None, dep))
+                tdeps.append((None, dep, sfull))
                 continue
-            tdeps.append((sver, dep))
+            tdeps.append((sver, dep, sfull))
     else:
         tdeps = pkg.makedepends
 
@@ -294,7 +318,6 @@ def install(pkg, origpkg, step, depmap, hostdep, update_check):
     binpkg_deps = []
     host_missing_deps = []
     missing_deps = []
-    missing_rdeps = []
 
     log = logger.get()
 
@@ -302,12 +325,8 @@ def install(pkg, origpkg, step, depmap, hostdep, update_check):
 
     # ensure cross-toolchain is included in hostdeps
     if cross:
-        ihdeps.append(
-            (
-                _srcpkg_ver(f"base-cross-{pprof.arch}", pkg),
-                f"base-cross-{pprof.arch}",
-            )
-        )
+        sver, sfull = _srcpkg_ver(f"base-cross-{pprof.arch}", pkg)
+        ihdeps.append((sver, f"base-cross-{pprof.arch}", sfull))
 
     chost = chroot.host_cpu()
 
@@ -337,7 +356,7 @@ def install(pkg, origpkg, step, depmap, hostdep, update_check):
         tarch,
     )
 
-    for sver, pkgn in ihdeps:
+    for sver, pkgn, fulln in ihdeps:
         # check if available in repository
         aver = _is_available(pkgn, "=", sver, pkg, hvers, hrepos, hsys, None)
         if aver:
@@ -354,9 +373,10 @@ def install(pkg, origpkg, step, depmap, hostdep, update_check):
         if not cross and (pkgn == origpkg or pkgn == pkg.pkgname):
             pkg.error(f"[host] build loop detected: {pkgn} <-> {origpkg}")
         # build from source
-        host_missing_deps.append((pkgn, sver))
+        host_missing_deps.append(fulln)
+        host_binpkg_deps.append(f"{pkgn}={sver}")
 
-    for sver, pkgn in itdeps:
+    for sver, pkgn, fulln in itdeps:
         # check if available in repository
         aver = _is_available(pkgn, "=", sver, pkg, tvers, trepos, tsys, tarch)
         if aver:
@@ -373,7 +393,8 @@ def install(pkg, origpkg, step, depmap, hostdep, update_check):
         if pkgn == origpkg or pkgn == pkg.pkgname:
             pkg.error(f"[target] build loop detected: {pkgn} <-> {origpkg}")
         # build from source
-        missing_deps.append((pkgn, sver))
+        missing_deps.append(fulln)
+        binpkg_deps.append(f"{pkgn}={sver}")
 
     for origin, dep in irdeps:
         pkgn, pkgv, pkgop = autil.split_pkg_name(dep)
@@ -409,19 +430,29 @@ def install(pkg, origpkg, step, depmap, hostdep, update_check):
         # not found
         log.out_plain(f"  [runtime] {dep}: not found")
         # consider missing
-        missing_rdeps.append((pkgn, pkgop, pkgv))
+        rdv, fulln = _srcpkg_ver(pkgn, pkg)
+        if not fulln or (pkgop and pkgv and not rdv):
+            pkg.error(f"template '{pkgn}' cannot be resolved")
+        if pkgop and pkgv:
+            rfv = f"{pkgn}-{rdv}"
+            rpt = pkgn + pkgop + pkgv
+            # ensure the build is not futile
+            if not autil.pkg_match(rfv, rpt):
+                pkg.error(f"version {rfv} does not match dependency {rpt}")
+        # treat the same as any missing target dependency, but without install
+        missing_deps.append(fulln)
 
     from cbuild.core import build
 
     # if this triggers any build of its own, it will return true
     missing = False
 
-    for pn, pv in host_missing_deps:
+    for fulln in host_missing_deps:
         try:
             build.build(
                 step,
                 template.Template(
-                    template.resolve_pkgname(pn, pkg, False),
+                    fulln,
                     chost if pkg.stage > 0 else None,
                     False,
                     pkg.run_check,
@@ -443,52 +474,13 @@ def install(pkg, origpkg, step, depmap, hostdep, update_check):
             missing = True
         except template.SkipPackage:
             pass
-        host_binpkg_deps.append(f"{pn}={pv}")
 
-    for pn, pv in missing_deps:
+    for fulln in missing_deps:
         try:
             build.build(
                 step,
                 template.Template(
-                    template.resolve_pkgname(pn, pkg, False),
-                    tarch if pkg.stage > 0 else None,
-                    False,
-                    pkg.run_check,
-                    (pkg.conf_jobs, pkg.conf_link_threads),
-                    pkg.build_dbg,
-                    (pkg.use_ccache, pkg.use_sccache, pkg.use_ltocache),
-                    pkg,
-                    force_check=pkg._force_check,
-                    stage=pkg.stage,
-                    allow_restricted=pkg._allow_restricted,
-                    data=pkg._data,
-                ),
-                depmap,
-                chost=hostdep,
-                no_update=not missing,
-                update_check=update_check,
-                maintainer=pkg._maintainer,
-            )
-            missing = True
-        except template.SkipPackage:
-            pass
-        binpkg_deps.append(f"{pn}={pv}")
-
-    for rd, rop, rv in missing_rdeps:
-        if rop and rv:
-            rdv = _srcpkg_ver(rd, pkg)
-            if not rdv:
-                pkg.error(f"template '{rd}' cannot be resolved")
-            rfv = f"{rd}-{rdv}"
-            rpt = rd + rop + rv
-            # ensure the build is not futile
-            if not autil.pkg_match(rfv, rpt):
-                pkg.error(f"version {rfv} does not match dependency {rpt}")
-        try:
-            build.build(
-                step,
-                template.Template(
-                    template.resolve_pkgname(rd, pkg, False),
+                    fulln,
                     tarch if pkg.stage > 0 else None,
                     False,
                     pkg.run_check,

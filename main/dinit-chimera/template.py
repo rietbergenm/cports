@@ -1,6 +1,6 @@
 pkgname = "dinit-chimera"
 pkgver = "0.99.17"
-pkgrel = 0
+pkgrel = 1
 build_style = "meson"
 configure_args = [
     "--libexecdir=/usr/lib",  # XXX drop libexec
@@ -8,19 +8,19 @@ configure_args = [
 ]
 hostmakedepends = ["meson", "pkgconf"]
 makedepends = [
+    "kmod-devel",
     "libdinitctl-devel",
-    "libkmod-devel",
     "linux-headers",
     "udev-devel",
 ]
 depends = [
     "dinit",
-    "tzdata",
+    "tzdb",
     "cmd:awk!chimerautils",
-    "cmd:fsck!mount",
+    "cmd:fsck!util-linux-mount",
     "cmd:grep!chimerautils",
     "cmd:mkdir!chimerautils",
-    "cmd:mount!mount",
+    "cmd:mount!util-linux-mount",
     "cmd:sd-tmpfiles!sd-tools",
     "cmd:sed!chimerautils",
     "cmd:snooze!snooze",

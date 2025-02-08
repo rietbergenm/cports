@@ -1,6 +1,6 @@
 pkgname = "ffmpeg"
 pkgver = "7.1"
-pkgrel = 4
+pkgrel = 5
 build_style = "configure"
 configure_args = [
     "--prefix=/usr",
@@ -103,7 +103,6 @@ makedepends = [
     "libplacebo-devel",
     "libpulse-devel",
     "librsvg-devel",
-    "librtmp-devel",
     "libtheora-devel",
     "libva-devel",
     "libvidstab-devel",
@@ -118,10 +117,11 @@ makedepends = [
     "lilv-devel",
     "ocl-icd-devel",
     "openjpeg-devel",
-    "openssl-devel",
+    "openssl3-devel",
     "opus-devel",
     "pipewire-jack-devel",
     "rav1e-devel",
+    "rtmpdump-devel",
     "rubberband-devel",
     "sdl2-compat-devel",
     "shaderc-devel",
@@ -137,7 +137,7 @@ makedepends = [
     "zimg-devel",
     "zlib-ng-compat-devel",
 ]
-depends = [self.with_pkgver("ffplay")]
+depends = [self.with_pkgver("ffmpeg-ffplay")]
 pkgdesc = "Decoding, encoding and streaming software"
 maintainer = "q66 <q66@chimera-linux.org>"
 # we use --enable-gpl; it enables useful filters
@@ -194,9 +194,11 @@ def init_configure(self):
 
 
 def _genlib(lname, ldesc):
-    @subpackage(f"lib{lname}")
+    @subpackage(f"ffmpeg-{lname}-libs")
     def _(self):
         self.pkgdesc = f"FFmpeg {ldesc} library"
+        # transitional
+        self.provides = [self.with_pkgver(f"lib{lname}")]
         return [f"usr/lib/lib{lname}.so.*"]
 
 
@@ -222,8 +224,10 @@ def _(self):
     )
 
 
-@subpackage("ffplay")
+@subpackage("ffmpeg-ffplay")
 def _(self):
     self.pkgdesc = "Simple video player using FFmpeg and SDL"
+    # transitional
+    self.provides = [self.with_pkgver("ffplay")]
 
-    return ["usr/bin/ffplay", "usr/share/man/man1/ffplay*"]
+    return ["cmd:ffplay"]

@@ -2,7 +2,7 @@
 pkgname = "python"
 _majver = "3.12"
 pkgver = f"{_majver}.8"
-pkgrel = 2
+pkgrel = 3
 build_style = "gnu_configure"
 configure_args = [
     "--enable-ipv6",
@@ -49,17 +49,17 @@ makedepends = [
     "bzip2-devel",
     "libedit-devel",
     "libexpat-devel",
-    "libffi-devel",
+    "libffi8-devel",
     "linux-headers",
-    "openssl-devel",
+    "openssl3-devel",
     "sqlite-devel",
     "xz-devel",
     "zlib-ng-compat-devel",
 ]
 checkdepends = ["ca-certificates"]
-depends = [self.with_pkgver(f"base-python{_majver}"), "ca-certificates"]
+depends = [self.with_pkgver(f"python-python{_majver}-meta"), "ca-certificates"]
 provides = [self.with_pkgver(f"python{_majver}")]
-install_if = [self.with_pkgver(f"base-python{_majver}")]
+install_if = [self.with_pkgver(f"python-python{_majver}-meta")]
 pkgdesc = "Python programming language"
 maintainer = "q66 <q66@chimera-linux.org>"
 license = "Python-2.0"
@@ -161,9 +161,10 @@ def _(self):
     return ["usr/lib/python*/test"]
 
 
-@subpackage(f"base-python{_majver}")
+@subpackage(f"python-python{_majver}-meta")
 def _(self):
     self.subdesc = "recommends package"
     self.options = ["empty"]
+    self.provides = [self.with_pkgver(f"base-python{_majver}")]
 
     return []

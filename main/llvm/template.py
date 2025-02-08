@@ -87,11 +87,11 @@ _enabled_runtimes = ["compiler-rt", "libcxx", "libcxxabi", "libunwind"]
 
 if self.stage > 0:
     configure_args += ["-DLLVM_ENABLE_FFI=ON"]
-    hostmakedepends += ["libffi-devel"]
+    hostmakedepends += ["libffi8-devel"]
     makedepends += [
         "python-devel",
         "libedit-devel",
-        "libffi-devel",
+        "libffi8-devel",
         "zstd-devel",
         "linux-headers",
     ]
@@ -130,7 +130,7 @@ _enable_mlir = self.stage >= 2
 
 match self.profile().arch:
     # consistently runs out of memory in flang ConvertExpr
-    case "ppc64" | "riscv64":
+    case "ppc64" | "riscv64" | "loongarch64":
         pass
     # unsupported on 32 bit cpus
     case "ppc" | "armhf" | "armv7":
@@ -156,6 +156,8 @@ match self.profile().arch:
         _arch = "RISCV64"
     case "armhf" | "armv7":
         _arch = "ARM"
+    case "loongarch64" | "loongarch32":
+        _arch = "LoongArch"
     case _:
         broken = f"Unknown CPU architecture: {self.profile().arch}"
 
